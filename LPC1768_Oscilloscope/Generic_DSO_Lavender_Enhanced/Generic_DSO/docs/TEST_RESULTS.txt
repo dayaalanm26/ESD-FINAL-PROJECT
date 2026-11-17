@@ -1,0 +1,59 @@
+test_continuous_trigger_uses_latest_complete_record (test_core.CaptureTests.test_continuous_trigger_uses_latest_complete_record) ... ok
+test_dc_frequency_is_unavailable (test_core.CaptureTests.test_dc_frequency_is_unavailable) ... ok
+test_empty_engine_has_no_capture (test_core.CaptureTests.test_empty_engine_has_no_capture) ... ok
+test_frequency_uses_sample_time (test_core.CaptureTests.test_frequency_uses_sample_time) ... ok
+test_loss_discards_previous_segment (test_core.CaptureTests.test_loss_discards_previous_segment) ... ok
+test_single_trigger_uses_first_complete_record (test_core.CaptureTests.test_single_trigger_uses_first_complete_record) ... ok
+test_square_wave_reports_duty_cycle (test_core.CaptureTests.test_square_wave_reports_duty_cycle) ... ok
+test_trigger_and_single_record_geometry (test_core.CaptureTests.test_trigger_and_single_record_geometry) ... ok
+test_device_can_report_discontinuity (test_core.ProtocolTests.test_device_can_report_discontinuity) ... ok
+test_duplicate_sequence_rejected (test_core.ProtocolTests.test_duplicate_sequence_rejected) ... ok
+test_explicit_timestamp_jump_breaks_capture (test_core.ProtocolTests.test_explicit_timestamp_jump_breaks_capture) ... ok
+test_internal_timestamp_gap_keeps_only_latest_segment (test_core.ProtocolTests.test_internal_timestamp_gap_keeps_only_latest_segment) ... ok
+test_invalid_numeric_data (test_core.ProtocolTests.test_invalid_numeric_data) ... ok
+test_irregular_times_preserved (test_core.ProtocolTests.test_irregular_times_preserved) ... ok
+test_metadata_rejects_empty_or_invalid_channels (test_core.ProtocolTests.test_metadata_rejects_empty_or_invalid_channels) ... ok
+test_requires_metadata (test_core.ProtocolTests.test_requires_metadata) ... ok
+test_sequence_loss_and_overlap (test_core.ProtocolTests.test_sequence_loss_and_overlap) ... ok
+test_timing_and_units (test_core.ProtocolTests.test_timing_and_units) ... ok
+test_autoset_centers_waveform_and_trigger (test_gui.GuiTests.test_autoset_centers_waveform_and_trigger) ... ok
+test_calibration_survives_connection (test_gui.GuiTests.test_calibration_survives_connection) ... ok
+test_capture_updates_classic_status_readouts (test_gui.GuiTests.test_capture_updates_classic_status_readouts) ... ok
+test_channel_scale_slider_tracks_selector (test_gui.GuiTests.test_channel_scale_slider_tracks_selector) ... ok
+test_classic_control_surface_exists (test_gui.GuiTests.test_classic_control_surface_exists) ... ok
+test_cursor_uses_real_channel_scale (test_gui.GuiTests.test_cursor_uses_real_channel_scale) ... ok
+test_metadata_does_not_generate_a_capture (test_gui.GuiTests.test_metadata_does_not_generate_a_capture) ... ok
+test_profile_dialog_fits (test_gui.GuiTests.test_profile_dialog_fits) ... This plugin does not support propagateSizeHints()
+ok
+test_single_arms_without_generating (test_gui.GuiTests.test_single_arms_without_generating) ... ok
+test_soft_menu_switches_like_scope_menu (test_gui.GuiTests.test_soft_menu_switches_like_scope_menu) ... ok
+test_startup_empty_and_run_disabled (test_gui.GuiTests.test_startup_empty_and_run_disabled) ... ok
+test_stop_and_disconnect_hold_capture (test_gui.GuiTests.test_stop_and_disconnect_hold_capture) ... ok
+test_time_slider_tracks_timebase_selector (test_gui.GuiTests.test_time_slider_tracks_timebase_selector) ... ok
+test_average_uses_last_n_triggered_records (test_processing.ProcessingTests.test_average_uses_last_n_triggered_records) ... ok
+test_hires_reduces_impulse_and_keeps_raw (test_processing.ProcessingTests.test_hires_reduces_impulse_and_keeps_raw) ... ok
+test_irregular_and_dense_traces_skip_sinc (test_processing.ProcessingTests.test_irregular_and_dense_traces_skip_sinc) ... ok
+test_length_or_timing_change_resets_average (test_processing.ProcessingTests.test_length_or_timing_change_resets_average) ... ok
+test_sinc_retains_original_extrema_and_does_not_mutate (test_processing.ProcessingTests.test_sinc_retains_original_extrema_and_does_not_mutate) ... ok
+test_untriggered_records_never_join_average (test_processing.ProcessingTests.test_untriggered_records_never_join_average) ... ok
+test_csv_exports_raw_record_in_hires_mode (test_redesign.ExportTests.test_csv_exports_raw_record_in_hires_mode) ... ok
+test_held_ac_reference_does_not_drift_on_probe_change (test_redesign.HeldCaptureTests.test_held_ac_reference_does_not_drift_on_probe_change) ... ok
+test_stopped_average_survives_display_settings (test_redesign.HeldCaptureTests.test_stopped_average_survives_display_settings) ... ok
+test_ac_reference_shared_with_trigger (test_redesign.RedesignTests.test_ac_reference_shared_with_trigger) ... ok
+test_average_and_hires_preserve_raw (test_redesign.RedesignTests.test_average_and_hires_preserve_raw) ... ok
+test_channel_name_not_duplicated (test_redesign.RedesignTests.test_channel_name_not_duplicated) ... ok
+test_cursor_recenter_on_timebase (test_redesign.RedesignTests.test_cursor_recenter_on_timebase) ... ok
+test_empty_measurements_are_mapping (test_redesign.RedesignTests.test_empty_measurements_are_mapping) ... ok
+test_interpolation_preserves_samples_and_measurements (test_redesign.RedesignTests.test_interpolation_preserves_samples_and_measurements) ... ok
+test_probe_scales_position_trigger_and_division (test_redesign.RedesignTests.test_probe_scales_position_trigger_and_division) ... ok
+test_run_state_single_source (test_redesign.RedesignTests.test_run_state_single_source) ... ok
+test_selected_menu_has_style_and_state (test_redesign.RedesignTests.test_selected_menu_has_style_and_state) ... ok
+test_stale_measurements_clear (test_redesign.RedesignTests.test_stale_measurements_clear) ... ok
+test_long_measurement_fits (test_redesign.RenderingTests.test_long_measurement_fits) ... ok
+test_redraw_requests_coalesce (test_redesign.RenderingTests.test_redraw_requests_coalesce) ... ok
+test_serial_protocol_through_real_os_port (test_transport.TransportTests.test_serial_protocol_through_real_os_port) ... ok
+
+----------------------------------------------------------------------
+Ran 53 tests in 1.663s
+
+OK

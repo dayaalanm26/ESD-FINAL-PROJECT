@@ -1,0 +1,2 @@
+Validation: 53 unittest cases pass with QT_QPA_PLATFORM=offscreen.
+See TEST_RESULTS.txt and VALIDATION.md for the tested environment and limitations.

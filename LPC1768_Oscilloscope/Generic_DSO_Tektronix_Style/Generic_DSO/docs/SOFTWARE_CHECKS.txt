@@ -1,0 +1,14 @@
+Generic DSO delivery checks
+
+25 unittest cases passed.
+Parser, timing, packet gaps, calibration preservation, latest/Single trigger selection,
+empty startup, cursor math, freeze/disconnect, and POSIX serial port integration covered.
+Portable C sender compiled with C99 -Wall -Wextra -Werror.
+Python files compiled successfully.
+GUI rendered offscreen and visually inspected at 1366x850 and 1440x940.
+Independent code review findings corrected and rechecked.
+
+Environment: Linux, Python 3.12, PySide6 6.11.2, pyqtgraph 0.14.0, NumPy 2.3.5, pyserial 3.5.
+Qt offscreen plugin reported propagateSizeHints unsupported for a dialog; no test failed.
+Not physically validated on a microcontroller or reference DSO.
+Windows launcher, EXE packaging and Arduino board-core compilation require Windows/Arduino verification.

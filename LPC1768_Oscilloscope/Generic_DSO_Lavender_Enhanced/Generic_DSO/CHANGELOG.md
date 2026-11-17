@@ -1,0 +1,26 @@
+# Lavender redesign
+
+- Centralized the complete lavender palette and stylesheet in `theme.py`.
+- Combined connection controls into one header; removed branding and subtitle.
+- Added dark 10 × 8 dotted graticule, center-axis ticks and channel/trigger markers.
+- Kept Run/Stop, Single and Autoset visible across all six highlighted menu pages.
+- Replaced channel controls with compact cards, coupling segments and unit fields.
+- Moved eight measurement chips into one row; added visibility checkboxes.
+- Added rounded 2.8 px traces, 7 px phosphor glow, sparse sample dots, peak downsampling.
+- Added display-only sinc/linear interpolation without changing raw samples.
+- Added Sample, triggered Average and Hi-Res acquisition processing.
+- Fixed the Device & sensors mnemonic by using a gear button with a tooltip.
+- Fixed selected-menu styling and forced Qt style re-polishing after changes.
+- Centralized Run/Stop text, state and colors in `set_run_state()`.
+- Removed duplicate channel names; unit suffixes track channel settings.
+- Shared a recent-record AC reference between the trigger threshold and display.
+- Scaled position, trigger threshold and V/div with probe changes to preserve the view.
+- Recentered out-of-view time cursors at 25% and 75% of the visible window.
+- Made empty measurements safe and cleared unavailable readings instead of retaining stale values.
+- Removed the dead autoscale alias and standardized “Center”.
+- Merged Windows launchers with Conda preference and a `.venv` fallback.
+- Shortened statuses, profile instructions, connection guide and footer; added error badges.
+- Preserved hardware protocol, capture engine, profile calibration, transport, examples and raw CSV exports.
+- Preserved stopped acquisition-processed records and AC references across display changes.
+- Coalesced redraw requests to enforce the 30 fps cap during slider/autorange activity.
+- Fitted long measurement values without clipping at the minimum window size.
