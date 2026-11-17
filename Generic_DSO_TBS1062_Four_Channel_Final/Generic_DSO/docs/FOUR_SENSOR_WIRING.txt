@@ -1,0 +1,64 @@
+FOUR-SENSOR WIRING AND EXPECTED OUTPUT
+=====================================
+
+Direct ESP32 wiring (included firmware default)
+  Light module AO               GPIO32 (CH1, volts)
+  DHT11 DATA / S                GPIO27 (CH2, degrees Celsius)
+  Sound module AO / ENV         GPIO33 (CH3, volts)
+  IR obstacle module DO / OUT   GPIO34 (CH4, logic)
+
+Connect compatible module VCC to 3.3 V and all grounds to ESP32 GND.
+If the ESP32 3V3 pin is inaccessible, use a separate regulated 3.3 V
+supply for the sensors with a shared ground. Keep the regulator outputs
+separate. The sensor outputs must stay within the 0–3.3 V range.
+
+Bare DHT11 with grille facing you and pins down, left to right:
+  VCC, DATA, unused, GND. Add a 10 kΩ resistor between DATA and 3.3 V.
+  A 3-pin module may already include this pull-up; use its printed labels.
+Bare LDR:
+  3.3 V -> LDR -> light input junction -> 10 kΩ -> GND.
+
+IR checks
+---------
+- Use the module's DO / OUT pin. Remove the old PWM divider from GPIO34.
+- Bring an object near the module and check its detection indicator changes.
+  Adjust the module's threshold trimmer if available. Hold the object in
+  place briefly so the 30 ms debounce can confirm a stable state.
+- GPIO34 is input only and has no internal pull-up. If your DO output is
+  open collector and has no working 3.3 V pull-up, use an external 10 kΩ
+  pull-up from DO/GPIO34 to 3.3 V. Verify the module output never exceeds
+  3.3 V before attaching it to ESP32.
+- The sketch assumes active-low DO. With the Tektronix probe ground on
+  ESP32 GND, the probe tip can check the actual DO voltage on GPIO34.
+  If the voltage goes HIGH on detection, set IR_ACTIVE_LOW = false
+  in the .ino and reupload. CH4 displays normalized logic rather than volts.
+- Connecting the signal and common ground properly is still important
+  even with software debounce.
+
+Optional ADS1115
+----------------
+Set USE_ADS1115 = true and reupload.
+  ADS1115 VDD                   regulated 3.3 V
+  ADS1115 GND                   ESP32 GND
+  ADS1115 SDA                   GPIO21
+  ADS1115 SCL                   GPIO22
+  ADS1115 ADDR                  GND (address 0x48)
+  ADS1115 ALERT / RDY           leave open
+  Light AO                      ADS1115 AIN0
+  DHT11 DATA / S                ESP32 GPIO27
+  Sound AO / ENV                ADS1115 AIN2
+  IR DO / OUT                   ADS1115 AIN3
+  ADS1115 AIN1                  leave open
+If the breakout has no I2C pull-ups, add 4.7 kΩ from SDA and SCL to 3.3 V.
+
+Demonstration
+-------------
+CH1: Cover the light sensor and shine light on it.
+CH2: Warm the DHT11 case gently; it updates about every 2.5 seconds.
+CH3: Clap near an analog envelope module. Raw microphone AO is limited
+     by the available sampling rate. The graph shows the acquired values.
+CH4: Move an object in and out and confirm a clean 0/1 step at detection.
+
+Refresh is coalesced to about 60 frames per second as a software target.
+The board's measured sample cadence, USB driver and computer determine
+the effective refresh. Missing data is shown as a gap.
