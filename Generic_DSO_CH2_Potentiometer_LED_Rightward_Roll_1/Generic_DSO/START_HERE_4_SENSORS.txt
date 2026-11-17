@@ -1,0 +1,57 @@
+GENERIC DSO | CH2 POTENTIOMETER AND PWM LED
+==========================================
+
+1. Wire the four inputs on your classic ESP32 DevKit / WROOM-32.
+
+   CH1  Light AO or LDR divider junction -> GPIO32
+   CH2  Potentiometer middle leg        -> GPIO35
+   CH3  Sound AO / ENV                   -> GPIO33
+   CH4  IR DO / OUT                      -> GPIO34
+
+   For the 10 kΩ potentiometer: one outer leg to 3.3 V and the other
+   outer leg to ESP32 GND. Connect all sensor grounds together.
+   Use the regulated 3.3 V rail that powers your other sensor modules.
+   If the board's 3V3 pin is blocked and GPIO26 is free, set
+   POWER_10K_POT_FROM_GPIO26 = true in the sketch and connect the 10 kΩ
+   pot's high-side outer leg to GPIO26. Keep this pin dedicated to the pot.
+   Alternatively use an external regulated 3.3 V rail with its ground
+   joined to ESP32 GND. Keep supply outputs separate.
+   Wire GPIO25 through a 1 kΩ resistor to the LED anode (+), then
+   connect the LED cathode (-) to ESP32 GND.
+   Remove any old PWM divider from GPIO34 before connecting IR.
+   For ADS1115 wiring and other details, see docs/FOUR_SENSOR_WIRING.txt.
+
+2. Open and upload this sketch in Arduino IDE:
+
+   firmware/ESP32_Potentiometer_CH2/ESP32_Potentiometer_CH2.ino
+
+   Select your ESP32 board and its COM port. The sketch uses the
+   ESP32 board package's built-in Arduino and Wire libraries.
+   Close Arduino Serial Monitor and Serial Plotter.
+
+3. In the extracted Generic_DSO folder, run Start_DSO_Conda.bat. It uses
+   your portable-dso environment and installs any missing libraries.
+   If the launcher cannot find Conda, open your Conda PowerShell and run
+   .\Start_DSO_Conda.bat from the same folder.
+   If the environment is missing, create it once:
+     conda create -n portable-dso python=3.13 pip
+   For regular Python installations use Start_DSO.bat.
+
+4. Select Serial, the ESP32 COM port, 921600 baud, and Connect.
+   The sensor preset starts capture in Roll. New samples enter at the
+   left edge and older samples move continuously toward the right edge.
+   The time labels show how long ago samples arrived. Hold with Stop.
+   Plot view: select CH2 Potentiometer, All stacked, or All overlaid.
+   CH4 IR Output follows the sensor DO pin: LOW plots at 0, HIGH at 1.
+
+Turn the knob. CH2 shows measured wiper voltage and the LED brightens
+as the voltage rises. If clockwise rotation lowers the voltage, swap
+the two outer legs and leave the wiper on GPIO35. For the actual 1 kHz
+PWM pulses, put the physical oscilloscope probe tip on GPIO25 and its
+ground clip on ESP32 GND. Start at 500 µs/div and a rising-edge trigger.
+
+If the app says Waiting for ESP32, confirm which COM port disappears
+when unplugged and reappears when reconnected. Keep 921600 selected and
+press the ESP32 EN/RESET button once. The new sketch repeats hello.
+To check serial output in Arduino Serial Monitor, disconnect the DSO
+first, select 921600, and close the monitor before reconnecting the DSO.
