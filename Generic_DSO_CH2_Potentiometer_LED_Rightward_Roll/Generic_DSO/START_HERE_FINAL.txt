@@ -1,0 +1,47 @@
+GENERIC DSO — FINAL MERGED LIGHT + TEK + PWM FIX
+-----------------------------------------------
+This is based on your uploaded Generic_DSO_FINAL_Light_Calibrated_Fixed(1).zip.
+The previous light appearance, Tektronix 1 Hz reference, calibrator, profiles,
+display, and measurement tools are retained. RUN/WAITING fix and 100 Hz PWM
+mode have been added, with display-preset and stale-gain safeguards.
+
+HOW TO USE WITH YOUR ESP32 (1k + 1k sensing divider)
+1. Open ESP32_POT_PWM_LED_DSO_GPIO34_FINAL.ino in Arduino IDE.
+   Target: classic ESP32 DevKit / WROOM-32, Arduino ESP32 core 2.x or 3.x.
+   Upload and CLOSE Serial Monitor or any program using the COM port.
+2. Double-click Generic_DSO/Start_DSO.bat (Windows).
+   A Python virtual environment and packages may be installed at first start.
+3. Select SERIAL, your ESP32 COM port (COM5 only if that is correct), 921600 baud.
+4. Click Connect. Capture auto-arms on the valid ESP32 HELLO; RUN also works
+   after COM opens. Read the connection hint if it stays at WAITING.
+5. PWM 100 Hz preset: CH1 1 V/div, 5 ms/div, DC, 1X, trigger 1.65V rising.
+   The old TEK PRESET is STILL included for your older 1 Hz, 115200 firmware.
+6. Turn your 10k potentiometer. LED brightness and measured PWM duty should
+   change together on Tektronix (probe GPIO25) and Python (USB/ADC GPIO34).
+7. Channel gain should be 1, offset 0; press RESET CH1 GAIN if necessary.
+   Known PWM firmware automatically resets a suspicious >5x stale software gain.
+   Never use the old 686x correction to imitate 3.3V. The two-point calibrator
+   requires real, independently verified voltage references.
+
+FINAL PIN CONFIGURATION
+GPIO26 -> 10k potentiometer outer terminal (GPIO HIGH, low-current only)
+GPIO35 -> 10k potentiometer wiper (middle terminal)
+GND    -> potentiometer other outer terminal
+GPIO25 -> 330-ohm (or 1k) series resistor -> LED anode; LED cathode -> GND
+GPIO25 -> 1k resistor R1 -> (junction) -> GPIO34
+                                  junction -> 1k resistor R2 -> GND
+Tektronix CH1 probe tip -> GPIO25; probe ground -> ESP32 GND
+ESP32 USB -> Windows computer running Python DSO
+NOTE: GPIO34 is NOT connected to potentiometer or LED directly.
+
+EXPECTED WITH 50% DUTY, 100 Hz PWM
+Frequency about 100Hz; period about 10ms; GPIO25 about 0-3.3V,
+GPIO34 about 0-1.65V; Python after divider reconstruction about 0-3.3V.
+Expected mean about 1.65V, but ADC sampling jitter and accuracy affect it.
+At 0 or 100% duty, PWM appears as a flat LOW/HIGH line; frequency may be blank.
+Python is a sampled measurement, not identical in resolution to real Tektronix.
+
+VALIDATION
+Syntax checks and non-GUI numerical/protocol tests are run during packaging.
+This environment does NOT have PySide6 or an ESP32: GUI/hardware behavior must
+be verified on Windows with your board; electrical calibration is NOT certified.

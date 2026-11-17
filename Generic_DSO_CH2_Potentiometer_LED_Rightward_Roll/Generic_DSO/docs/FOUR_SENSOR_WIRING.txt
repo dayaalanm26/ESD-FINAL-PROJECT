@@ -1,0 +1,64 @@
+FOUR-CHANNEL WIRING AND EXPECTED OUTPUT
+======================================
+
+Direct ESP32 wiring (included firmware default, USE_ADS1115 = false)
+  Light module AO               GPIO32 (CH1, volts)
+  Potentiometer center/wiper    GPIO35 (CH2, volts)
+  Sound module AO / ENV         GPIO33 (CH3, volts)
+  IR obstacle module DO / OUT   GPIO34 (CH4, logic)
+
+Connect the outer legs of a 10 kΩ pot to 3.3 V and GND. Connect compatible
+module VCC to 3.3 V and all grounds to ESP32 GND. Use the same 3.3 V rail
+as the sensors. With an external 3.3 V supply, join the grounds and leave
+the regulator outputs separate. Keep all inputs inside 0–3.3 V.
+For a bare LDR: 3.3 V -> LDR -> CH1 junction -> 10 kΩ -> GND.
+Nominal wiper span is ground to supply. The ESP32 ADC can saturate near
+the upper end, so use the waveform as a measured voltage reading.
+
+LED brightness and physical probe
+--------------------------------
+  GPIO25 -> 1 kΩ resistor -> LED anode (+)
+  LED cathode (-) -> ESP32 GND
+
+GPIO25 produces 1 kHz PWM. Duty increases with CH2 voltage. The
+firmware smooths the LED control; CH2 stays a direct voltage reading.
+If the LED misses either endpoint, check the CH2 readings at the two
+knob limits and adjust POT_OFF_V and POT_FULL_V in the sketch.
+If necessary, set POWER_10K_POT_FROM_GPIO26 = true and wire the 10 kΩ
+pot's high-side leg to GPIO26 instead of 3.3 V. GPIO26 is for this
+pot alone. It must be free of other connections and power sources.
+
+Physical scope CH1 probe tip goes to GPIO25 and its ground clip goes
+to ESP32 GND. Begin at 500 µs/div, DC coupling and rising-edge trigger
+near 1.65 V. Adjust probe attenuation in both the probe and the scope.
+
+IR checks
+---------
+Use module DO / OUT and remove the old PWM divider from GPIO34.
+Check its detection LED and adjust its trimmer if available. GPIO34
+has no internal pull-up. An open-collector output lacking a pull-up
+needs an external 10 kΩ to 3.3 V. CH4 reads 0 for clear and 1 for
+detected after about 30 ms of a stable input. If your module's DO
+goes HIGH on detection, set IR_ACTIVE_LOW = false and reupload.
+
+Optional ADS1115
+----------------
+Set USE_ADS1115 = true and reupload.
+  ADS1115 VDD                   regulated 3.3 V
+  ADS1115 GND                   ESP32 GND
+  ADS1115 SDA                   GPIO21
+  ADS1115 SCL                   GPIO22
+  ADS1115 ADDR                  GND (address 0x48)
+  ADS1115 ALERT / RDY           leave open
+  Light AO                      ADS1115 AIN0
+  Potentiometer center/wiper    ADS1115 AIN1
+  Sound AO / ENV                ADS1115 AIN2
+  IR DO / OUT                   ADS1115 AIN3
+If the breakout has no I2C pull-ups, add 4.7 kΩ from SDA and SCL to 3.3 V.
+
+Display and export
+------------------
+In Roll the newest data is at the left. Samples move to the right and
+leave the viewport. Stop holds the current screen. The time axis shows
+age. CSV export keeps rows in device-time order, from oldest to newest.
+The board cadence, USB driver and computer determine the refresh.
