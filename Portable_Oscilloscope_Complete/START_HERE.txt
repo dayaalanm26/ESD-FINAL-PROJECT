@@ -1,0 +1,29 @@
+PORTABLE OSCILLOSCOPE
+=====================
+
+Try the redesigned interface:
+1. Extract this ZIP to a normal Windows folder.
+2. Install Python 3.10 or newer with Tcl/Tk enabled.
+3. Double-click Start_Demo.bat. Select Demo: sensors or Demo: PWM.
+   The waveform and CSV are explicitly labeled simulated in demo mode.
+
+Use real hardware:
+1. Open docs/Wiring_and_Setup.html in your browser for every connection.
+2. In Arduino IDE, select your classic ESP32 DevKit/WROOM-32 and upload:
+   Sensors: firmware/ESP32_ADS1115_Sensors/ESP32_ADS1115_Sensors.ino
+   Original LED PWM wiring: firmware/ESP32_PWM_GPIO34/ESP32_PWM_GPIO34.ino
+3. Close Arduino Serial Monitor/Plotter. Keep the board connected by USB.
+4. Double-click Start_DSO.bat. It creates a local Python environment and
+   installs pyserial the first time. For USB mode, internet is normally
+   needed for that install.
+5. Choose USB serial, select the board's COM port, set 921600, then Connect.
+   Capture starts after the ESP32 identifies itself.
+
+The two sketches are separate. Reflash to switch experiments on one board.
+The original ESP32 PWM sketch can also be used, with its existing baud rate.
+
+Linux/macOS: python3 -m pip install -r requirements.txt
+             python3 scope_app.py
+The GUI requires Python's Tk module. For offline demo: python3 scope_app.py --demo
+
+This project uses low-voltage 3.3 V signals. Read the guide before wiring.

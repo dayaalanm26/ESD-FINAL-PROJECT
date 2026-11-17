@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portable Oscilloscope | Wiring and setup</title>
+<style>
+:root{color-scheme:light;--ink:#172b40;--muted:#465e70;--teal:#006c68;--line:#d6e3ea;--panel:#fff;--bg:#edf4f7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Segoe UI",sans-serif}main{max-width:1020px;margin:auto;padding:35px 22px 50px}
+header{padding:20px 30px 22px;border-radius:15px;background:#e0f2ee;border:1px solid #c3e2dc}h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 8px}h2{font-size:25px;margin:0 0 10px}h3{font-size:18px;margin:18px 0 5px}
+p{margin:7px 0 12px}.intro{color:var(--muted);max-width:64ch}nav{margin-top:15px;display:flex;gap:8px;flex-wrap:wrap}nav a{padding:4px 10px;border:1px solid #a5cac1;border-radius:6px;background:#f6fcfa}
+a{color:var(--teal)}section{margin-top:15px;padding:23px 28px;background:var(--panel);border:1px solid var(--line);border-radius:12px}ol,ul{padding-left:24px}li{margin-bottom:7px}
+.table{overflow:auto}table{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:15px}td,th{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:9px 10px}th{background:#edf5f7}td:first-child{font-weight:600}
+code{background:#f1f6fa;padding:1px 4px;border-radius:4px;overflow-wrap:anywhere}aside{padding:9px 12px;background:#fff4da;border-left:4px solid #bf7e14;margin:12px 0}
+img{display:block;width:100%;border:1px solid var(--line);border-radius:7px}
+@media print{body{background:#fff}main{padding:0}section{break-inside:avoid;border:0;margin-top:8px;padding:10px 0}header{padding:10px}nav{display:none}}
+</style>
+<main>
+<header><h1>Portable Oscilloscope</h1>
+<p class="intro">Setup and full pin configuration for the ESP32, ADS1115 sensor board, and 100 Hz LED PWM experiment.</p>
+<nav aria-label="Sections"><a href="#start">Get started</a><a href="#sensors">Sensors</a><a href="#pwm">PWM and Tektronix</a><a href="#control">Scope controls</a><a href="#check">Troubleshoot</a></nav></header>
+<section id="start"><h2>Get started on Windows</h2>
+<ol>
+<li>Extract the complete ZIP. Install Python 3.10 or newer with Tcl/Tk enabled. Open <code>Start_Demo.bat</code> to check the interface before connecting hardware.</li>
+<li>In Arduino IDE, install the Espressif ESP32 board package if needed. Select your classic ESP32 DevKit/WROOM-32 board and its COM port. Open the chosen sketch from <code>firmware/</code> and upload it. For an original ESP32 Dev Module-compatible board, choose <strong>ESP32 Dev Module</strong>.</li>
+<li>For real data, close Arduino Serial Monitor and Plotter. Launch <code>Start_DSO.bat</code>. The first launch creates <code>.venv</code> and installs pyserial. Choose <strong>USB serial</strong>, click <strong>Scan</strong> if your COM port is missing, set <strong>921600</strong>, and click <strong>Connect</strong>.</li>
+<li>Acquisition starts after the device sends identification. The app selects the matching plot preset. Check that the header reads <strong>Live hardware</strong>.</li>
+</ol>
+<p>For offline practice, use <strong>Demo: sensors</strong> or <strong>Demo: PWM</strong>. Demo inputs and exported records are labeled simulated. Sensor demo controls include a Light slider, Clap button and Object toggle. The PWM demo has a Duty slider.</p>
+</section>
+<section><h2>Desktop preview</h2>
+<p>The screenshot shows the app with its built-in sensor demo selected.</p>
+<img src="Desktop_Preview.png" alt="Portable Oscilloscope light interface with four simulated sensor traces, channel controls and measurement cards">
+</section>
+<section id="sensors"><h2>Experiment 1 · ADS1115 sensors</h2>
+<p>Use <code>firmware/ESP32_ADS1115_Sensors/ESP32_ADS1115_Sensors.ino</code>. Parts: classic ESP32 DevKit, ADS1115 breakout, breadboard, USB data cable, LDR, 10 kΩ fixed resistors, and any of the optional sensors below.</p>
+<div class="table"><table>
+<thead><tr><th>ADS1115 breakout pin</th><th>Connect to</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>VDD / VCC</td><td>Regulated 3.3 V rail</td><td>Use the ESP32 3V3 pin or a separate regulated 3.3 V supply if it is inaccessible. When using an external rail, join the grounds and leave the two supply outputs separate.</td></tr>
+<tr><td>GND</td><td>ESP32 GND and sensor GND</td><td>Use one common signal ground.</td></tr>
+<tr><td>SDA</td><td>ESP32 GPIO21</td><td>I²C data.</td></tr>
+<tr><td>SCL</td><td>ESP32 GPIO22</td><td>I²C clock.</td></tr>
+<tr><td>ADDR</td><td>Common GND</td><td>Selects I²C address 0x48.</td></tr>
+<tr><td>ALERT / RDY</td><td>Leave open</td><td>The sketch polls conversion status over I²C.</td></tr>
+<tr><td>AIN0 / A0</td><td>LDR divider junction</td><td>CH1. LDR between 3.3 V and AIN0. Separate 10 kΩ resistor between AIN0 and GND. Voltage rises in brighter light. An available 1 kΩ fixed resistor also works for a quick test, with a smaller reading at the same light level.</td></tr>
+<tr><td>AIN1 / A1</td><td>10 kΩ NTC divider junction</td><td>CH2. NTC between 3.3 V and AIN1. Separate 10 kΩ resistor between AIN1 and GND. Voltage rises as the thermistor warms.</td></tr>
+<tr><td>AIN2 / A2</td><td>Sound module envelope output</td><td>CH3. Use a 3.3 V-compatible module with an analog envelope output. Power VCC from the 3.3 V rail and join GND. Verify the labeled output provides an envelope in the 0–3.3 V range.</td></tr>
+<tr><td>AIN3 / A3</td><td>IR obstacle module digital OUT / DO</td><td>CH4. Use a 3.3 V-compatible module. VCC to the 3.3 V rail, GND to common GND. Depending on the module, detection can be active low.</td></tr>
+</tbody></table></div>
+<aside>Use 0–3.3 V input signals. If a breakout has no I²C pull-ups, add a 4.7 kΩ pull-up from SDA to 3.3 V and another from SCL to 3.3 V. Reserve GPIO26 for the potentiometer wiring below. Ground unused ADC inputs or remove their entries from the sketch’s <code>INPUTS</code> array. The remaining entries appear in list order.</aside>
+<p>Choose <strong>Sensors</strong> for <strong>500 ms/div</strong>, <strong>0.5 V/div</strong> and <strong>Roll</strong>. Cover and uncover the LDR to see CH1 change. Warm the thermistor with your fingers for a slower transition on CH2. The display is in volts. The ADS1115 reads its channels sequentially and shares its conversion rate across them, so the readings are suited to slow signals and sensor envelopes.</p>
+</section>
+<section id="pwm"><h2>Experiment 2 · LED PWM and Tektronix</h2>
+<p>Use <code>firmware/ESP32_PWM_GPIO34/ESP32_PWM_GPIO34.ino</code> or your original compatible PWM sketch. Parts: 10 kΩ potentiometer, an indicator LED, its own 330 Ω or 1 kΩ series resistor, and two equal 1 kΩ divider resistors.</p>
+<div class="table"><table>
+<thead><tr><th>From</th><th>To</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td>GPIO26</td><td>One outer leg of the 10 kΩ potentiometer</td><td>The PWM sketch drives this GPIO HIGH to supply the low-current pot. Use the board 3.3 V rail if accessible and leave GPIO26 disconnected from that leg.</td></tr>
+<tr><td>GPIO35</td><td>Potentiometer center / wiper</td><td>Reads the knob position.</td></tr>
+<tr><td>ESP32 GND</td><td>Other outer leg of the pot and LED cathode</td><td>Common ground. Swap the pot’s outer connections to reverse knob direction.</td></tr>
+<tr><td>GPIO25</td><td>Series resistor, then LED anode</td><td>Drives the LED at 100 Hz. The LED series resistor is separate from the ADC divider.</td></tr>
+<tr><td>GPIO25</td><td>1 kΩ R1, then GPIO34 junction</td><td>First half of the ADC divider. Same PWM node as the LED branch.</td></tr>
+<tr><td>GPIO34 junction</td><td>1 kΩ R2, then GND</td><td>Second half of the divider. GPIO34 sees roughly 0–1.65 V. The sketch applies ×2 to report GPIO25 voltage.</td></tr>
+<tr><td>Tektronix CH1 tip</td><td>GPIO25</td><td>Optional direct comparison with the physical scope. Match the probe attenuation switch in the Tektronix channel menu.</td></tr>
+<tr><td>Tektronix ground clip</td><td>ESP32 GND</td><td>Attach the ground clip to the low-voltage circuit ground.</td></tr>
+<tr><td>ESP32 USB</td><td>Computer</td><td>USB serial to the Python DSO.</td></tr>
+</tbody></table></div>
+<p>Choose <strong>PWM 100 Hz</strong> for <strong>5 ms/div</strong>, <strong>2 V/div</strong> and a <strong>1.65 V rising trigger</strong>. Turn the pot slowly to show the LED brightness and HIGH pulse width changing together. The nominal period is 10 ms. At the knob extremes a flat trace is normal. At the nominal 2 kSa/s target, narrow pulses can fall between samples.</p>
+<aside>On one ESP32, upload one sketch at a time. To switch experiments during a live review, use two preflashed boards or switch the desktop app to the labeled PWM demo after showing live sensors.</aside>
+</section>
+<section id="control"><h2>Scope controls</h2>
+<ul>
+<li><strong>Run / Hold</strong> updates or freezes the display. <strong>Single</strong> captures once. Roll mode waits for a full new time window when data was already flowing.</li>
+<li><strong>Roll</strong> follows current samples, <strong>Auto</strong> uses an edge when present and can display a flat signal, and <strong>Normal</strong> waits for the selected edge.</li>
+<li>Toggle each plotted channel in <strong>Channels</strong>. Use <strong>Measure</strong> to choose which channel sets the voltage axis and readouts. Choose <strong>V/div</strong> and <strong>Center</strong> separately per channel, or use <strong>Fit channel</strong>.</li>
+<li>Click two positions on the plot for A/B timing cursors and the time difference. Right-click or use <strong>Clear cursors</strong> to reset.</li>
+<li><strong>Calibrate</strong> uses two raw readings and their verified reference voltages. <strong>Reset ×1</strong> sets gain to one and offset to zero. Calibration is per connection. The PWM sketch already compensates for the 1 kΩ divider.</li>
+<li><strong>Export CSV</strong> writes the displayed acquisition window with channel values and a source label. Display lines and PWM steps leave the sampled values intact.</li>
+</ul>
+</section>
+<section id="check"><h2>Troubleshooting</h2>
+<div class="table"><table>
+<thead><tr><th>Symptom</th><th>What to check</th></tr></thead><tbody>
+<tr><td>COM port is missing or busy</td><td>Check for a data-capable USB cable and the board’s USB serial driver. Close Arduino Serial Monitor and any older DSO window, then rescan.</td></tr>
+<tr><td>Waiting for device</td><td>Match the baud to the flashed sketch. Both included sketches use 921600. Earlier 1 Hz sketches can use 115200. For ADS1115, check the supply, ADDR and SDA/SCL. The sketch identifies itself after the first successful conversion.</td></tr>
+<tr><td>Sensor trace is flat</td><td>Enable the correct channel, select Roll, and check the voltage at its ADS1115 input. For a wiring check, disconnect the sensor output from that input, and test against GND and then the same 3.3 V rail.</td></tr>
+<tr><td>PWM appears flat</td><td>Place the knob near the middle, apply the PWM preset, and check the GPIO34 divider junction. Verify GPIO25 on the Tektronix if available.</td></tr>
+<tr><td>Increasing gaps or invalid packets</td><td>Try a short USB cable, verify the baud and close other serial applications. For an ADS1115, check I²C pull-ups and shorten I²C leads.</td></tr>
+</tbody></table></div>
+<p>References: <a href="https://www.ti.com/lit/ds/symlink/ads1115.pdf">TI ADS1115 datasheet</a> · <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/api/i2c.html">Espressif ESP32 I²C</a> · <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html">Espressif ESP32 LEDC</a>.</p>
+</section>
+</main>
+</html>
