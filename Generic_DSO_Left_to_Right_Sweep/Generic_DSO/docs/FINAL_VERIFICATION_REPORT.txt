@@ -1,0 +1,17 @@
+FINAL MERGED BUILD — VERIFICATION (14 Nov 2026)
+
+Source: the exact Generic_DSO_FINAL_Light_Calibrated_Fixed(1).zip
+Merged: original UI + Tek reference/calibration + PWM RUN / WAITING fix.
+
+PASS: Python syntax compile of all application and test files.
+PASS: 39 non-GUI unit tests (protocol, trigger, measurements,
+calibration, display processing, PWM integration and static checks).
+NOT RUN: PySide6 GUI tests; PySide6/pyqtgraph are not installed in
+this execution environment, and package download is unavailable.
+NOT RUN: physical serial interface test; pyserial is unavailable here.
+NOT RUN: ESP32 firmware compilation; Arduino ESP32 toolchain unavailable.
+NOT RUN: electrical calibration against user's real Tektronix/signal.
+
+Important: 1k/1k divider reconstruction assumes two matching resistors
+and uses a nominal scale factor of 2. Real measurement is still subject
+to ESP32 ADC error, transient timing, and serial capture limitations.

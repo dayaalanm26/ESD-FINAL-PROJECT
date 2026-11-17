@@ -1,0 +1,66 @@
+GENERIC DSO | FOUR SENSOR CHANNELS
+==================================
+
+1. Wire your classic ESP32 DevKit / WROOM-32.
+
+   CH1  Light AO or LDR divider junction -> GPIO32
+   CH2  DHT11 DATA / S                   -> GPIO27
+   CH3  Sound AO / ENV                   -> GPIO33
+   CH4  IR DO / OUT                      -> GPIO34
+
+   Use compatible 3.3 V modules and one common ESP32 GND. Remove any
+   old GPIO34 PWM voltage divider before attaching IR DO. The sketch
+   defaults to direct GPIO wiring, with USE_ADS1115 = false.
+
+   For optional ADS1115 wiring, the bare DHT11 pull-up and a bare LDR
+   divider, see docs/FOUR_SENSOR_WIRING.txt.
+
+2. In Arduino IDE install "DHT sensor library" by Adafruit, plus
+   "Adafruit Unified Sensor". Open the following sketch and upload
+   it using your ESP32 board and COM port:
+
+   firmware/ESP32_DHT11_Sensor_DSO/ESP32_DHT11_Sensor_DSO.ino
+
+   Close Arduino Serial Monitor and Serial Plotter before step 3.
+
+3. In the extracted Generic_DSO folder, run Start_DSO_Conda.bat. It uses
+   your portable-dso environment and installs any missing libraries.
+   If the launcher cannot find Conda, open your Conda PowerShell in
+   this folder and run .\Start_DSO_Conda.bat.
+
+   If the environment has not been created, run this once:
+     conda create -n portable-dso python=3.13 pip
+
+   For regular Python installations use Start_DSO.bat.
+
+4. In the DSO select Serial, your ESP32 COM port and 921600 baud.
+   Click Connect. Capture starts in Sweep with All stacked selected.
+   New samples draw from the left edge to the right edge. The dashed
+   line marks the newest sample. A new pass begins at the left edge.
+   Switch off Sweep above the graph to use Roll, which scrolls history.
+   Change seconds per division with Horizontal or the timebase controls.
+   At 500 ms/div, one sweep covers five seconds.
+
+   PLOT VIEW (above the graph)
+   - All stacked: independent lanes in CH1, CH2, CH3, CH4 order.
+   - All overlaid: combined waveforms on a shared screen.
+   - CH1, CH2, CH3 or CH4: one full-size trace and its measurements.
+   In a combined view use the colored channel buttons to pick a subset.
+   The dark Tektronix-style screen is available in Acquire.
+
+   CH2 keeps its place while the DHT11 starts or becomes unavailable.
+   Its blank trace means no temperature reading is available. CH1, CH3
+   and CH4 keep running. With a valid DHT11, CH2 reads in degrees Celsius.
+   CH4 shows 0 for clear and 1 for detected, with 30 ms debounce.
+   CSV saves the underlying acquired values and blanks for missing values.
+
+If the app says Waiting for ESP32, confirm the COM port disappears when
+unplugged and reappears when reconnected. Keep 921600 selected and press
+the ESP32 EN/RESET button once. The new sketch repeats its identification
+packet. If inspecting serial JSON in Arduino Serial Monitor, disconnect
+the DSO first, select 921600, then close the monitor before reconnecting.
+
+The original TEK PRESET and PWM 100 Hz preset still work with compatible
+legacy hardware sketches. This app uses the ESP32's real sample stream.
+Its operator controls and waveform display follow a bench DSO layout.
+Its measurement bandwidth and timing depend on the ESP32 acquisition.
