@@ -1,0 +1,49 @@
+FOUR-SENSOR WIRING AND EXPECTED OUTPUT
+=====================================
+
+Direct GPIO mode (included firmware default)
+  Signal                        Input
+  Light module AO               ESP32 GPIO32
+  DHT11 DATA/S                  ESP32 GPIO27
+  Sound module AO/ENV           ESP32 GPIO33
+  IR obstacle module OUT/DO     ESP32 GPIO34
+  Sensor power and ground       3.3 V for compatible modules, common GND
+
+With ADS1115 (set USE_ADS1115 = true and reupload)
+  ADS1115 VDD                   regulated 3.3 V
+  ADS1115 GND                   ESP32 GND
+  ADS1115 SDA                   GPIO21
+  ADS1115 SCL                   GPIO22
+  ADS1115 ADDR                  ESP32 GND (address 0x48)
+  ADS1115 ALERT/RDY             leave open
+  Light module AO               ADS1115 AIN0
+  DHT11 DATA/S                  ESP32 GPIO27
+  Sound module AO/ENV           ADS1115 AIN2
+  IR obstacle module OUT/DO     ADS1115 AIN3
+  ADS1115 AIN1                  unused
+If the breakout lacks pull-ups, add 4.7 kΩ from SDA to 3.3 V and another
+4.7 kΩ from SCL to 3.3 V. Check that the ADS1115 shares the ESP32 ground.
+
+Use the sensor's printed pin labels. Connect a bare DHT11 with its grille
+facing you and pins down as 3.3 V, DATA, unused, GND left-to-right. Add a
+10 kΩ DATA-to-3.3 V pull-up to a bare sensor or a module lacking one.
+For a bare LDR, wire 3.3 V -> LDR -> light input -> 10 kΩ -> GND.
+All inputs must stay in the 0–3.3 V range.
+
+1. Light: cover it or shine a light on it. The bare LDR divider listed above
+   rises in brighter light; module polarity can differ.
+2. DHT11: warm the case gently with your fingers. Temperature updates about
+   every 2.5 seconds. Use Measure CH2 when the DHT11 label appears.
+3. Sound: a clap changes the voltage on an envelope output. Raw microphone
+   audio is limited by the ADC sampling rate. A digital output can instead
+   show a threshold crossing.
+4. IR: move your hand in front of it. Output switches between LOW and HIGH.
+   On active-low modules, detection is the LOW state.
+
+A disconnected DHT11 leaves three voltage traces active. The labels show
+which signal each temporary channel contains. If you choose ADS1115 mode
+and it does not respond, the DSO shows an ADS1115 wiring hint.
+
+Original PWM experiment: flash the supplied PWM example separately and
+restore the PWM LED/divider connections. The Python app still recognizes
+its original serial packet format and applies its 100 Hz preset.

@@ -1,0 +1,73 @@
+GENERIC DSO | GUIDE TO LIVE FOUR-SENSOR OUTPUT
+=============================================
+
+This package includes your video-matched Python DSO and the new combined
+light, temperature, sound and IR firmware. Use this guide for the sensor
+experiment. Older examples and Tektronix/PWM modes are retained.
+
+1. WIRE THE FOUR SENSORS (classic ESP32 DevKit / WROOM-32)
+
+The included sketch is already set to USE_ADS1115 = false. It reads the
+three voltage signals through onboard ADC1. The DHT11 is read digitally.
+
+  Light AO (or LDR divider junction) -> GPIO32
+  DHT11 DATA/S                       -> GPIO27
+  Sound AO or envelope output        -> GPIO33
+  IR OUT/DO                          -> GPIO34
+  Module GND                         -> shared ESP32 GND
+  Compatible module VCC              -> regulated 3.3 V
+
+Disconnect the earlier PWM divider from GPIO34 before using GPIO34 for IR.
+Check actual module labels and verify each signal stays between 0 and 3.3 V.
+If the ESP32 3V3 pin is inaccessible, use a regulated 3.3 V supply with
+its ground joined to ESP32 GND. Keep the two regulator outputs separate.
+
+Bare DHT11 with grille facing you and legs pointing down:
+  VCC, DATA, unused, GND from left to right.
+  Add a 10 kΩ resistor from DATA to 3.3 V. A module may already have one.
+Bare LDR: 3.3 V -> LDR -> GPIO32 junction -> 10 kΩ resistor -> GND.
+The other sensor tips are in docs/FOUR_SENSOR_WIRING.txt.
+
+2. UPLOAD THE INCLUDED SKETCH
+
+  firmware/ESP32_DHT11_Sensor_DSO/ESP32_DHT11_Sensor_DSO.ino
+
+In Arduino IDE Library Manager install "DHT sensor library" by Adafruit
+and "Adafruit Unified Sensor." Choose the ESP32 board and its COM port.
+Click Upload. Close Arduino Serial Monitor and Serial Plotter.
+
+3. START THE PYTHON DSO
+
+Your Conda setup: double-click Start_DSO_Conda.bat. If it cannot locate
+Conda, run .\Start_DSO_Conda.bat from your Conda PowerShell in this folder.
+If the portable-dso environment does not exist, create it once with:
+  conda create -n portable-dso python=3.13 pip
+
+The launcher installs the desktop app's dependencies if needed.
+Manual equivalent from this folder:
+  conda run -n portable-dso --no-capture-output python -m pip install -r requirements.txt
+  conda run -n portable-dso --no-capture-output python scope_app.py
+
+For an existing standard Python install, Start_DSO.bat remains available.
+
+4. CONNECT AND WATCH THE TRACES
+
+Select Serial, choose the ESP32 COM port, set 921600 baud, and click Connect.
+Capture starts and the sensor profile is applied automatically. The normal
+channel order is CH1 Light, CH2 DHT11 (°C), CH3 Sound, CH4 IR. Choose the
+measurement source to read each channel's values.
+
+While waiting for DHT11, three voltage channels stream in the temporary
+order CH1 Light, CH2 Sound, CH3 IR. When temperature arrives, the DSO
+automatically adds it and switches to the normal four-channel order.
+The connection banner tells you to check GPIO27 if DHT11 is pending.
+
+If it still says Waiting for ESP32, check the sketch was uploaded and
+confirm the COM port by unplugging/replugging. Leave 921600 selected.
+The new firmware sends a hello immediately and repeats every two seconds.
+At 921600 in Arduino Serial Monitor, you should see hello, status and
+samples lines. Disconnect the DSO before opening the monitor and close the
+monitor before reconnecting the DSO.
+
+Optional ADS1115 wiring: set USE_ADS1115 = true only when installed.
+See docs/FOUR_SENSOR_WIRING.txt for the exact pins.
