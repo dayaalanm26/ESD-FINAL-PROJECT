@@ -1,0 +1,51 @@
+GENERIC DSO — LIGHT TEK MATCHED / SAFE SCALE FIX
+================================================
+
+1. Extract the entire ZIP folder (do not run directly inside the ZIP).
+2. In Generic_DSO, double-click Start_DSO.bat on Windows.
+   * Python >=3.10 required; first startup may install PySide6/pyqtgraph/
+     numpy/pyserial and requires internet. If you already had these packages,
+     the launcher reuses them.
+3. Flash examples/ESP32_Tek_Reference_1Hz.ino to ESP32 using Arduino IDE.
+4. Wire (ESP32 3.3 V SIGNALS ONLY!):
+
+   ESP32 GPIO25 -----+--------- Tektronix CH1 probe tip
+                     |
+                  10 kOhm (R1)
+                     |
+   ESP32 GPIO34 -----+  (ADC pin; ~0 to 1.65 V)
+                     |
+                  10 kOhm (R2)
+                     |
+   ESP32 GND --------+--------- Tektronix probe ground
+
+   The sketch reports reconstructed GPIO25 voltage (0 to ~3.3 V) after
+   ADC mV->V conversion and 2x resistor-divider compensation.
+5. USB COM port -> 115200 baud -> Connect -> RUN.
+6. IMPORTANT FOR EXISTING USERS WHO USED TWO-POINT CALIBRATION TO GET 3.3 V:
+   Click RESET CH1 GAIN (orange button). Confirm to remove the previously
+   stored large multiplier. The old x686 calibration can make an actual ~
+   4.8 mV received signal look like a perfect 3.3 V p-p waveform.
+   Resetting gain reveals the FIRMWARE'S true numeric output. If it then
+   shows a few mV, check wiring and reflash supplied ESP32 sketch.
+7. New version fits the first captured waveform automatically. Use
+   TEK PRESET (CH1 1 V/div, 500 ms/div, 1.65 V level/vertical center)
+   for the reference 1 Hz / 3.3 V square wave; if you change controls
+   intentionally, the DSO will not re-scale continuously unless you
+   enable 'Continuous autoscale'. AUTOSET is always available.
+
+IMPORTANT:
+- 1 mV/div on a 3.3 V p-p waveform will clip the trace off-screen.
+- The green/orange scale-audit strip distinguishes raw transmitted
+  span from software-corrected display span.
+- Calibration >5x or <0.2x is blocked in the calibration dialog;
+  this is a deliberately safer default to avoid hiding bad firmware units.
+- This app cannot measure, prove, or repair voltage at a disconnected pin.
+- 50 Sa/s firmware is adequate to DISPLAY a 1 Hz square-wave but is not a
+  substitute for a real 60 MHz oscilloscope in frequency/bandwidth.
+
+VERIFICATION STATUS:
+- Python source syntax checks PASSED.
+- 33 numerical and protocol/processing regression tests PASSED.
+- Physical ESP32/Tektronix acquisition NOT RUN in this environment.
+- Qt GUI smoke tests NOT RUN: PySide6 package unavailable offline here.
