@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).Decoder._decode" name="Generic_DSO_Single_File(1).Decoder._decode">
+<area shape="rect" id="Node000001" title="Internal parser implementation for JSON protocol messages." alt="" coords="217,5,387,48"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_decoder.html#a4f1419b5188b892702ba5beb990dc47b" title="Decodes a single newline&#45;delimited JSON payload into a protocol object." alt="" coords="5,5,169,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,27,169,29,169,24,204,26"/>
+</map>

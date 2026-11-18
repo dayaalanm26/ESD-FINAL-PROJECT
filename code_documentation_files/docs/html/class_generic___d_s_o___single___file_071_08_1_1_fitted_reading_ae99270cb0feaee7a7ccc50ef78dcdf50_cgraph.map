@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).FittedReading.paintEvent" name="Generic_DSO_Single_File(1).FittedReading.paintEvent">
+<area shape="rect" id="Node000001" title="Renders the fitted measurement reading with right&#45;elision fallback." alt="" coords="5,5,187,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_fitted_reading.html#af1298e3603083f0aa9f624cc05764131" title="Computes the largest pixel font size between 9 px and 13 px that fits the label width." alt="" coords="235,13,446,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,32,222,34,217,35,187,37"/>
+</map>

@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['rate_0',['rate',['../class_generic___d_s_o___single___file_071_08_1_1_reader.html#a94dd2002df98b300595ff83806b57497',1,'Generic_DSO_Single_File(1).Reader.rate'],['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af337e75dfb8874a2b675822d5937c89b',1,'Generic_DSO_Single_File(1).ScopeWindow.rate']]],
+  ['rate_5flabel_1',['rate_label',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a6fc9bca39d6455f1568076e3b057e931',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reader_2',['reader',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a30b5f5f961e806b8e7d3e8f5cdc63c97',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['records_3',['records',['../class_generic___d_s_o___single___file_071_08_1_1_acquisition_processor.html#ab98d1dedcab176f0c39cb6ff7a95755e',1,'Generic_DSO_Single_File(1)::AcquisitionProcessor']]],
+  ['rect_4',['rect',['../class_generic___d_s_o___single___file_071_08_1_1_graticule.html#ac0df21ce3c1857e7ed91eece474d5d9e',1,'Generic_DSO_Single_File(1)::Graticule']]],
+  ['reference_5factive_5',['reference_active',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a46b9c3a451ec93cb9356d86bf1c2a55d',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reference_5flabel_6',['reference_label',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a956ed4a4db6a2a7a42aab6751bee8ad1',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reference_5fmode_7',['reference_mode',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a37f968ec9b54b2f347d7651e22670a93',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reference_5fstatus_8',['reference_status',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a4b4c677e8a8b6a21ac7a8a9970088a67',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['refresh_9',['refresh',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a98ac07765a473db085efe285d2825160',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['refresh_5fports_10',['refresh_ports',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a88e4530c81780af57061162d0d042336',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reject_11',['reject',['../class_generic___d_s_o___single___file_071_08_1_1_profile_dialog.html#a9b9f26cfa6c58601a41e932d4cecbf34',1,'Generic_DSO_Single_File(1)::ProfileDialog']]],
+  ['reset_5fch1_5fgain_12',['reset_ch1_gain',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a56ac7b163891b016e0ce9ef4039a2674',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reset_5fcursor_5fbutton_13',['reset_cursor_button',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a56745bf5cec364fccf7d52b76c88ba3c',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reset_5fcursors_14',['reset_cursors',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a326c15ab278a5a026b3d3bc9721f6a69',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['reset_5fgain_5fbutton_15',['reset_gain_button',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fd74347ea283707f9caff4994a4e00e',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['roll_16',['roll',['../class_generic___d_s_o___single___file_071_08_1_1_capture.html#af2a2f367248738c15bb1cdb263045eda',1,'Generic_DSO_Single_File(1)::Capture']]],
+  ['roll_5faxis_17',['roll_axis',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a648a5de153cc6cc87971e95ca3f2b203',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['root_5fscroll_18',['root_scroll',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a053c46580570219d8e9676168accc9d3',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['run_5fbutton_19',['run_button',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a3bafac3ec51707599db8342fde537973',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['running_20',['running',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#aad939d85aaee7f50fbaa983c69ea3836',1,'Generic_DSO_Single_File(1)::ScopeWindow']]]
+];

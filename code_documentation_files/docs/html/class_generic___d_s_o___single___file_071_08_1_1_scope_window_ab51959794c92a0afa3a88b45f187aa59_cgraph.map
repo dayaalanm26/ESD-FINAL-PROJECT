@@ -1,0 +1,13 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.autoset" name="Generic_DSO_Single_File(1).ScopeWindow.autoset">
+<area shape="rect" id="Node000001" title="One&#45;shot AUTOSET adjusting vertical scales, offsets, timebase (~2 periods/div), and trigger midpoint." alt="" coords="5,92,204,135"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a9374880a6281b4d55658866cc12edac7" title="Returns the processed, coupled, and probe&#45;scaled trace array for channel i." alt="" coords="259,47,470,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,96,246,93,241,94,205,102"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a51f7dfefdde5397ab383854c2faa9956" title="Switches the right&#45;hand softkey menu page and highlights the active tab button." alt="" coords="252,129,477,172"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="204,125,239,132,234,132,204,130"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a840aab90520b76b49cee2ec6484ba1c2" title="Retrieves the DC baseline subtracted during AC coupling for channel ch." alt="" coords="534,5,703,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,56,521,50,516,51,470,62"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7bda3d8f84691c35ae906eceecd128f3" title="Returns the numeric probe attenuation multiplier (1.0, 10.0, or 100.0) for channel i." alt="" coords="525,88,712,147"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="470,90,512,100,507,100,470,96"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="760,5,948,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="704,32,747,34,742,35,704,37"/>
+</map>

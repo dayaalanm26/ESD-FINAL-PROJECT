@@ -1,0 +1,71 @@
+\doxysection{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File(1).Frame Class Reference}
+\hypertarget{class_generic___d_s_o___single___file_071_08_1_1_frame}{}\label{class_generic___d_s_o___single___file_071_08_1_1_frame}\index{Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}}
+
+
+Decoded block of multi-\/channel time-\/series samples from a single \textquotesingle{}samples\textquotesingle{} packet.  
+
+
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+np \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_frame_a1132302b2889234986178d2aa6bcd0a7}{t}} .ndarray
+\begin{DoxyCompactList}\small\item\em 1D array of sample timestamps in seconds. \end{DoxyCompactList}\item 
+np \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_frame_a2ae100ba93df179cbea40f0536737b20}{y}} .ndarray
+\begin{DoxyCompactList}\small\item\em 2D array of sample values with shape (N, num\+\_\+channels). \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_frame_ac700dd95a2cc5a204b50e034182adf6c}{gap}} = False
+\begin{DoxyCompactList}\small\item\em Monotonically increasing packet sequence number. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_frame_a700b6ef08315a09fcf7ab1392001b4f0}{clipped}} = False
+\begin{DoxyCompactList}\small\item\em True if any sample reached hardware ADC limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Decoded block of multi-\/channel time-\/series samples from a single \textquotesingle{}samples\textquotesingle{} packet. 
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_frame_doc-variable-members}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_frame_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_frame_a700b6ef08315a09fcf7ab1392001b4f0}\index{Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}!clipped@{clipped}}
+\index{clipped@{clipped}!Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}}
+\doxysubsubsection{\texorpdfstring{clipped}{clipped}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_frame_a700b6ef08315a09fcf7ab1392001b4f0} 
+bool \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Frame.\+clipped = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+True if any sample reached hardware ADC limits. 
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_frame_ac700dd95a2cc5a204b50e034182adf6c}\index{Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}!gap@{gap}}
+\index{gap@{gap}!Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}}
+\doxysubsubsection{\texorpdfstring{gap}{gap}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_frame_ac700dd95a2cc5a204b50e034182adf6c} 
+bool \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Frame.\+gap = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Monotonically increasing packet sequence number. 
+
+True if a timing or sequence discontinuity precedes this frame. \Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_frame_a1132302b2889234986178d2aa6bcd0a7}\index{Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}!t@{t}}
+\index{t@{t}!Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_frame_a1132302b2889234986178d2aa6bcd0a7} 
+np \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Frame.\+t .ndarray\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+1D array of sample timestamps in seconds. 
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_frame_a2ae100ba93df179cbea40f0536737b20}\index{Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}!y@{y}}
+\index{y@{y}!Generic\_DSO\_Single\_File(1).Frame@{Generic\_DSO\_Single\_File(1).Frame}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_frame_a2ae100ba93df179cbea40f0536737b20} 
+np \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Frame.\+y .ndarray\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+2D array of sample values with shape (N, num\+\_\+channels). 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_generic___d_s_o___single___file_01_071_08_8py}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File (1).\+py}}\end{DoxyCompactItemize}

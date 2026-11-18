@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.sync_pan_slider" name="Generic_DSO_Single_File(1).ScopeWindow.sync_pan_slider">
+<area shape="rect" id="Node000001" title="Aligns the horizontal pan slider thumb with the current pan spinbox value." alt="" coords="234,47,417,105"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a5397429e0d07a4ce4708707f28ecce6e" title="Synchronizes horizontal pan slider and updates plot viewport range." alt="" coords="7,5,184,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,57,184,53,184,48,221,56"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ae55cf33c057215afce12bde1e7e4998d" title="Synchronizes timebase slider and updates horizontal axes when s/div changes." alt="" coords="5,88,186,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,96,187,104,186,98,221,95"/>
+</map>

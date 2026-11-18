@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).AcquisitionProcessor.reset" name="Generic_DSO_Single_File(1).AcquisitionProcessor.reset">
+<area shape="rect" id="Node000001" title="Clears accumulated averaging history." alt="" coords="295,51,519,93"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_acquisition_processor.html#a85f3f0610aaf574eef3af85d64556367" title="Initializes the acquisition processor state." alt="" coords="28,5,224,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,56,224,50,224,45,282,55"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_acquisition_processor.html#a5c1fb92832d4c5b625c31ca91700c200" title="Processes a Capture according to the active acquisition mode." alt="" coords="5,88,247,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,89,247,96,247,91,282,89"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.arm" name="Generic_DSO_Single_File(1).ScopeWindow.arm">
+<area shape="rect" id="Node000001" title="Clears old buffer data and starts continuous or single&#45;shot acquisition." alt="" coords="521,133,698,176"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ab896e495cf3278a38177655a83836ae7" title="Configures channel names, units, presets, and auto&#45;arming upon receiving a device Metadata packet." alt="" coords="268,5,462,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="558,125,472,78,447,67,447,62,474,74,564,125"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a792c6e12945c128b64b62bb089f07c6e" title="Clears stale captures, persists updated channel profiles, and restarts acquisition if previously runn..." alt="" coords="273,88,458,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="503,139,458,134,458,129,508,138"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad0af9c6d83d44fd1af81966777ed9367" title="Arms the oscilloscope for a single triggered capture event." alt="" coords="271,171,460,213"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="503,171,461,180,460,175,508,170"/>
+<area shape="rect" id="Node000008" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad49a19eee4c87a0c4a2af08bfafbe50f" title="Toggles continuous acquisition between RUN and STOP (or arms pending run before HELLO)." alt="" coords="258,237,473,280"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="560,183,474,228,443,239,442,234,472,223,555,185"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a95a4fb689bf9e87f8dc1084f4058983e" title="Periodic 16 ms GUI timer callback draining the reader queue, triggering captures, and updating diagno..." alt="" coords="20,13,195,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,36,197,37,195,32,255,33"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a588f0e40b2b7190596035d6a4e5a6973" title="Opens an interactive two&#45;point voltage calibration dialog with safety bounds checking." alt="" coords="5,84,210,143"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="255,117,211,118,209,112,260,115"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a63cad47fda73bd1c7543e9b68eb4afd9" title="Prompts the user and restores CH1 software calibration to unity (gain=1.0, offset=0...." alt="" coords="15,167,200,225"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="256,151,201,170,199,165,260,149"/>
+</map>

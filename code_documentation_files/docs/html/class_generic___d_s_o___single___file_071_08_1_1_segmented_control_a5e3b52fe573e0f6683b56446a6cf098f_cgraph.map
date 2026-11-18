@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).SegmentedControl.setCurrentText" name="Generic_DSO_Single_File(1).SegmentedControl.setCurrentText">
+<area shape="rect" id="Node000001" title="Programmatically selects a segment by label and emits currentTextChanged." alt="" coords="5,5,204,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_segmented_control.html#a0f992c32c2dc269c2b304b4cc54054c7" title="Returns the currently checked button label." alt="" coords="252,13,497,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,32,239,34,233,35,204,37"/>
+</map>

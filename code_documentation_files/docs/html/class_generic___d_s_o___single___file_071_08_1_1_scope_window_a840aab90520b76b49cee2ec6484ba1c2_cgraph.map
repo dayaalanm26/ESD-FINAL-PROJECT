@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.ac_reference" name="Generic_DSO_Single_File(1).ScopeWindow.ac_reference">
+<area shape="rect" id="Node000001" title="Retrieves the DC baseline subtracted during AC coupling for channel ch." alt="" coords="5,5,175,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="223,5,410,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,32,210,34,205,35,175,37"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.disconnect" name="Generic_DSO_Single_File(1).ScopeWindow.disconnect">
+<area shape="rect" id="Node000001" title="Stops the background Reader thread and resets UI controls to disconnected state." alt="" coords="244,43,462,85"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a95a4fb689bf9e87f8dc1084f4058983e" title="Periodic 16 ms GUI timer callback draining the reader queue, triggering captures, and updating diagno..." alt="" coords="13,5,188,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,46,189,42,189,37,231,45"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#abe78099c6ed81f2625e499fcb09cef69" title="Connects to or disconnects from the configured Serial or TCP acquisition target." alt="" coords="5,72,196,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,83,197,90,196,85,231,82"/>
+</map>

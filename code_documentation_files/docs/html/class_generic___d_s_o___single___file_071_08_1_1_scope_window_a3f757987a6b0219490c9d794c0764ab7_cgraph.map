@@ -1,0 +1,13 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.arm" name="Generic_DSO_Single_File(1).ScopeWindow.arm">
+<area shape="rect" id="Node000001" title="Clears old buffer data and starts continuous or single&#45;shot acquisition." alt="" coords="5,96,183,139"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a2b0a9b48ae617a9d6d51300c02ee58ff" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="236,5,420,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,93,231,68,226,71,158,98"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7340f3b4386a2aba580739140718d347" title="Updates the RUN/STOP button styling and top status badge." alt="" coords="241,88,414,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,115,228,116,223,118,183,120"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="231,171,425,229"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,137,231,164,226,166,157,142"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="473,129,673,188"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="425,181,460,178,455,179,426,186"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="482,212,665,271"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="426,214,469,223,463,223,425,219"/>
+</map>

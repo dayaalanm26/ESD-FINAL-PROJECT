@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.trigger_dragged" name="Generic_DSO_Single_File(1).ScopeWindow.trigger_dragged">
+<area shape="rect" id="Node000001" title="Updates the trigger level spinbox when the user drags the horizontal trigger line on the plot." alt="" coords="5,5,197,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a23d10d1ff32d2734fef3d75a9b67591b" title="Synchronizes the trigger slider thumb with the current trigger voltage level." alt="" coords="245,5,439,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,32,232,34,226,35,197,37"/>
+</map>

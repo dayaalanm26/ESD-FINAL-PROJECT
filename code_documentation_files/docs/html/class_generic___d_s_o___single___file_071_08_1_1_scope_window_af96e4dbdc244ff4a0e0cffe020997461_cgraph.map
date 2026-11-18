@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.update_status_readouts" name="Generic_DSO_Single_File(1).ScopeWindow.update_status_readouts">
+<area shape="rect" id="Node000001" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="5,47,200,105"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="248,5,448,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,57,235,53,230,55,201,62"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="256,88,440,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,90,243,99,238,100,200,95"/>
+</map>

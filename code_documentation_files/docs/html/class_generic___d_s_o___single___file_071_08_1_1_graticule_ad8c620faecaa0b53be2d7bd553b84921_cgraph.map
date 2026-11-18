@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).Graticule.set_dark" name="Generic_DSO_Single_File(1).Graticule.set_dark">
+<area shape="rect" id="Node000001" title="Toggles between light and Tektronix&#45;inspired dark screen graticule palettes." alt="" coords="5,13,180,56"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_graticule.html#a6e9c82a9a650b3cb7a65d89a595a64c1" title="Redraws the cached graticule QPicture for a new horizontal X range." alt="" coords="228,5,373,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,32,215,34,210,35,180,37"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).RealtimeEventQueue.get" name="Generic_DSO_Single_File(1).RealtimeEventQueue.get">
+<area shape="rect" id="Node000001" title="Pops the oldest event from the queue." alt="" coords="268,13,482,56"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_realtime_event_queue.html#a47c17123bd12b7236bebcd7168b841f6" title="Retrieves the oldest queued event without blocking." alt="" coords="5,5,220,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,35,220,37,220,32,255,34"/>
+</map>

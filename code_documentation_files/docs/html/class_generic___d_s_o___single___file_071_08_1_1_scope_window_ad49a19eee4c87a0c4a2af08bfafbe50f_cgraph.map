@@ -1,0 +1,17 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.toggle_run" name="Generic_DSO_Single_File(1).ScopeWindow.toggle_run">
+<area shape="rect" id="Node000001" title="Toggles continuous acquisition between RUN and STOP (or arms pending run before HELLO)." alt="" coords="5,96,221,139"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a3f757987a6b0219490c9d794c0764ab7" title="Clears old buffer data and starts continuous or single&#45;shot acquisition." alt="" coords="269,96,446,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,115,256,116,250,118,222,120"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7340f3b4386a2aba580739140718d347" title="Updates the RUN/STOP button styling and top status badge." alt="" coords="504,5,678,64"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="211,93,268,81,491,47,487,50,269,87,213,98"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="494,171,688,229"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="212,137,269,148,481,183,476,186,268,153,212,142"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a2b0a9b48ae617a9d6d51300c02ee58ff" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="499,88,683,147"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="446,115,486,117,481,118,446,120"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="419,93,494,69,489,71,421,98"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="420,137,494,165,489,165,420,142"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="736,129,937,188"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="688,181,718,179,723,178,689,186"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="745,212,928,271"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="689,214,732,223,727,223,689,219"/>
+</map>

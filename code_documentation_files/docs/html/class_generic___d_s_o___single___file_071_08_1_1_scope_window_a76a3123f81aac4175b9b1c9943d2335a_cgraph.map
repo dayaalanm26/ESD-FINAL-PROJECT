@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.position_spin_changed" name="Generic_DSO_Single_File(1).ScopeWindow.position_spin_changed">
+<area shape="rect" id="Node000001" title="Synchronizes vertical position slider when the position spinbox changes." alt="" coords="5,5,206,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a23d10d1ff32d2734fef3d75a9b67591b" title="Synchronizes the trigger slider thumb with the current trigger voltage level." alt="" coords="254,5,448,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,32,241,34,236,35,206,37"/>
+</map>

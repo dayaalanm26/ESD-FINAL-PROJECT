@@ -1,0 +1,15 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.single" name="Generic_DSO_Single_File(1).ScopeWindow.single">
+<area shape="rect" id="Node000001" title="Arms the oscilloscope for a single triggered capture event." alt="" coords="5,96,195,139"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a3f757987a6b0219490c9d794c0764ab7" title="Clears old buffer data and starts continuous or single&#45;shot acquisition." alt="" coords="243,96,420,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,115,229,116,224,118,196,120"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a2b0a9b48ae617a9d6d51300c02ee58ff" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="473,5,657,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,93,468,69,463,71,395,98"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7340f3b4386a2aba580739140718d347" title="Updates the RUN/STOP button styling and top status badge." alt="" coords="478,88,652,147"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="420,115,465,117,460,118,420,120"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="468,171,662,229"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="394,137,468,165,463,165,394,142"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="710,129,911,188"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="662,181,692,179,697,178,663,186"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="719,212,902,271"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="663,214,706,223,701,223,663,219"/>
+</map>

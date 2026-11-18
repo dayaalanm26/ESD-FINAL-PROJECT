@@ -1,0 +1,19 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow._render_capture" name="Generic_DSO_Single_File(1).ScopeWindow._render_capture">
+<area shape="rect" id="Node000001" title="Renders all active traces, glow overlays, sample dots, stacked lanes, and trigger markers." alt="" coords="5,183,161,241"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="467,175,667,233"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,204,209,201,453,200,450,204,209,207,162,209"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a9374880a6281b4d55658866cc12edac7" title="Returns the processed, coupled, and probe&#45;scaled trace array for channel i." alt="" coords="209,83,419,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,180,232,146,228,150,153,185"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="217,216,411,275"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="161,221,204,228,199,230,161,226"/>
+<area shape="rect" id="Node000008" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="476,265,659,324"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="123,239,164,265,209,284,273,298,338,304,402,306,463,306,457,306,402,311,338,310,272,303,208,289,161,269,122,244"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a840aab90520b76b49cee2ec6484ba1c2" title="Retrieves the DC baseline subtracted during AC coupling for channel ch." alt="" coords="482,88,652,147"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="419,112,469,115,464,116,420,117"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7bda3d8f84691c35ae906eceecd128f3" title="Returns the numeric probe attenuation multiplier (1.0, 10.0, or 100.0) for channel i." alt="" coords="474,5,661,64"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="411,80,461,67,456,69,413,85"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="715,88,903,147"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="652,115,702,117,697,118,653,120"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="411,227,454,222,449,223,412,232"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="412,262,463,274,457,274,411,267"/>
+</map>

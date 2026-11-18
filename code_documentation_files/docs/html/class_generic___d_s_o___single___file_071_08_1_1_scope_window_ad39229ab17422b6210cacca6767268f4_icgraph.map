@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.accept_capture" name="Generic_DSO_Single_File(1).ScopeWindow.accept_capture">
+<area shape="rect" id="Node000001" title="Stores a new Capture record, runs acquisition processing, and updates axes if needed." alt="" coords="271,43,465,101"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad96e3026574d343eaeb7c0175041fdc9" title="Slot triggered when acquisition mode, average count, or Hi&#45;Res width changes." alt="" coords="5,5,223,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,56,223,53,223,48,258,55"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a95a4fb689bf9e87f8dc1084f4058983e" title="Periodic 16 ms GUI timer callback draining the reader queue, triggering captures, and updating diagno..." alt="" coords="26,88,202,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,89,202,99,202,94,258,88"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.pan_spin_changed" name="Generic_DSO_Single_File(1).ScopeWindow.pan_spin_changed">
+<area shape="rect" id="Node000001" title="Synchronizes horizontal pan slider and updates plot viewport range." alt="" coords="5,43,182,101"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a03544e06af7bc3f5864c29d846806548" title="Aligns the horizontal pan slider thumb with the current pan spinbox value." alt="" coords="253,5,436,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,56,239,50,235,52,183,61"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7dd06b82d483bbd87fef8c449be773af" title="Configures horizontal X range, X&#45;axis inversion (for Roll mode), ticks, and graticule window." alt="" coords="230,88,459,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,83,217,89,212,91,183,88"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="507,47,701,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="459,92,494,90,489,91,460,97"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="758,113,941,172"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="459,114,745,135,740,136,459,120"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="749,31,950,89"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="701,67,736,67,731,68,702,72"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="702,100,746,114,740,114,701,105"/>
+</map>

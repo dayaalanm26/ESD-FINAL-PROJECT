@@ -1,0 +1,19 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.update_trigger_slider" name="Generic_DSO_Single_File(1).ScopeWindow.update_trigger_slider">
+<area shape="rect" id="Node000001" title="Synchronizes the trigger slider thumb with the current trigger voltage level." alt="" coords="489,221,683,280"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#afa20df0c825eb4cf6352ffe42bd6bbfa" title="Handles channel coupling changes by resetting averaging and updating measurements." alt="" coords="241,5,441,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="556,208,507,143,475,109,439,78,423,67,423,62,443,74,478,105,511,140,561,209"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#aeba08be0c3702e0e216e8f64a1965a58" title="Updates vertical position spinbox from the division slider (value / 100.0 divs)." alt="" coords="241,88,441,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="521,213,440,168,406,150,406,145,442,163,527,213"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a76a3123f81aac4175b9b1c9943d2335a" title="Synchronizes vertical position slider when the position spinbox changes." alt="" coords="241,221,441,280"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="471,251,442,253,441,248,476,250"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a341fc249eb7726fb1954f18c31034e9d" title="Rescales vertical scale, offset, and trigger level proportionally when probe attenuation changes." alt="" coords="5,168,193,227"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="476,218,441,212,312,199,194,197,192,192,312,194,441,207,481,216"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af8e533e687601347e17b4c4378626f8f" title="Synchronizes vertical scale slider and redraws when V/div dropdown changes." alt="" coords="6,263,192,321"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="478,285,441,295,377,301,311,304,193,302,192,296,311,299,376,296,441,289,483,283"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a96149dc8184c0fa6e75a46f26dca35e0" title="Resets trigger holdoff and refreshes level suffixes/markers when trigger settings change." alt="" coords="245,355,436,413"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="526,287,442,338,407,356,405,352,440,334,522,289"/>
+<area shape="rect" id="Node000008" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a777513852a82dc17cce63d0555e688eb" title="Updates the trigger level spinbox when the user drags the horizontal trigger line on the plot." alt="" coords="245,437,436,496"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="561,291,511,362,478,397,443,427,424,439,422,434,439,423,475,393,507,358,557,294"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,226,194,221,192,215,228,224"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="223,272,194,278,191,274,228,269"/>
+</map>

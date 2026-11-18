@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.channel_toggled" name="Generic_DSO_Single_File(1).ScopeWindow.channel_toggled">
+<area shape="rect" id="Node000001" title="Slot triggered when a channel visibility button is toggled." alt="" coords="5,5,206,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a1c937c8de6fbd3e4d7c0ceaad49b321b" title="Enables or disables channel, trigger, and export controls based on link and capture readiness." alt="" coords="254,5,455,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,32,241,34,236,35,206,37"/>
+</map>

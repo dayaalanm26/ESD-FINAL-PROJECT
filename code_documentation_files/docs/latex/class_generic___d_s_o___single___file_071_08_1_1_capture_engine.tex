@@ -1,0 +1,175 @@
+\doxysection{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File(1).Capture\+Engine Class Reference}
+\hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine}{}\label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+
+
+Rolling sample buffer and sub-\/sample interpolated trigger engine.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a7f302ab883395ccbf947560a0afad444}{\+\_\+\+\_\+init\+\_\+\_}} (self)
+\begin{DoxyCompactList}\small\item\em Initializes the capture buffer arrays. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a4355c9390dac6ac10f73ea2f60fc4aa2}{clear}} (self)
+\begin{DoxyCompactList}\small\item\em Flushes all buffered sample history and resets trigger timestamps. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_aafd11ecb581a0fa12a1512240d1323b6}{append}} (self, frame, keep\+\_\+seconds=None)
+\begin{DoxyCompactList}\small\item\em Appends a new \doxylink{class_generic___d_s_o___single___file_071_08_1_1_frame}{Frame} to the circular history buffer. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_af60b67870a3f8fea46df49bb3c504485}{capture}} (self, span, channel, level, slope, mode, allow\+\_\+auto, prefer\+\_\+newest=True)
+\begin{DoxyCompactList}\small\item\em Searches the buffer for a trigger crossing or produces an Auto/\+\+Roll capture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a95958404c97b76f83f4d72eea98f7fc2}{t}} = np.\+empty(0)
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a40a59a083342a354ff682ab482ac2f2b}{y}} = None
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_ae7f6929a49f739b28b97ad63821584f1}{clipping}} = np.\+empty(0, dtype=bool)
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a2e07caae325a25519060317e0fdd94af}{last\+\_\+trigger}} = -\/math.\+inf
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_ab64e6394d0aa7df9747d4e70324823a6}{last\+\_\+auto}} = -\/math.\+inf
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rolling sample buffer and sub-\/sample interpolated trigger engine. 
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_doc-constructors}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a7f302ab883395ccbf947560a0afad444}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a7f302ab883395ccbf947560a0afad444} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the capture buffer arrays. 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a7f302ab883395ccbf947560a0afad444_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_doc-func-members}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_aafd11ecb581a0fa12a1512240d1323b6}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!append@{append}}
+\index{append@{append}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_aafd11ecb581a0fa12a1512240d1323b6} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+append (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{frame}{, }\item[{}]{keep\+\_\+seconds}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Appends a new \doxylink{class_generic___d_s_o___single___file_071_08_1_1_frame}{Frame} to the circular history buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & Decoded \doxylink{class_generic___d_s_o___single___file_071_08_1_1_frame}{Frame} containing calibrated sample values. \\
+\hline
+{\em keep\+\_\+seconds} & Optional retention window duration in seconds (used in Roll mode). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_aafd11ecb581a0fa12a1512240d1323b6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_af60b67870a3f8fea46df49bb3c504485}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!capture@{capture}}
+\index{capture@{capture}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{capture()}{capture()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_af60b67870a3f8fea46df49bb3c504485} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+capture (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{span}{, }\item[{}]{channel}{, }\item[{}]{level}{, }\item[{}]{slope}{, }\item[{}]{mode}{, }\item[{}]{allow\+\_\+auto}{, }\item[{}]{prefer\+\_\+newest}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+Searches the buffer for a trigger crossing or produces an Auto/\+\+Roll capture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em span} & Total horizontal window width in seconds (10 divisions). \\
+\hline
+{\em channel} & Zero-\/based trigger source channel index. \\
+\hline
+{\em level} & Trigger threshold voltage in calibrated channel units. \\
+\hline
+{\em slope} & Trigger edge polarity (\textquotesingle{}Rising\textquotesingle{} or \textquotesingle{}Falling\textquotesingle{}). \\
+\hline
+{\em mode} & Trigger mode (\textquotesingle{}Auto\textquotesingle{}, \textquotesingle{}Normal\textquotesingle{}, or \textquotesingle{}Roll\textquotesingle{}). \\
+\hline
+{\em allow\+\_\+auto} & Permits untriggered fallback capture when True. \\
+\hline
+{\em prefer\+\_\+newest} & Scans backward from newest samples if True; forward if False (Single mode). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_generic___d_s_o___single___file_071_08_1_1_capture}{Capture} object if window criteria are satisfied, else None. 
+\end{DoxyReturn}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a4355c9390dac6ac10f73ea2f60fc4aa2}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!clear@{clear}}
+\index{clear@{clear}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a4355c9390dac6ac10f73ea2f60fc4aa2} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Flushes all buffered sample history and resets trigger timestamps. 
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a4355c9390dac6ac10f73ea2f60fc4aa2_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_doc-variable-members}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_ae7f6929a49f739b28b97ad63821584f1}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!clipping@{clipping}}
+\index{clipping@{clipping}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{clipping}{clipping}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_ae7f6929a49f739b28b97ad63821584f1} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+clipping = np.\+empty(0, dtype=bool)}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_ab64e6394d0aa7df9747d4e70324823a6}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!last\_auto@{last\_auto}}
+\index{last\_auto@{last\_auto}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{last\_auto}{last\_auto}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_ab64e6394d0aa7df9747d4e70324823a6} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+last\+\_\+auto = -\/math.\+inf}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a2e07caae325a25519060317e0fdd94af}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!last\_trigger@{last\_trigger}}
+\index{last\_trigger@{last\_trigger}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{last\_trigger}{last\_trigger}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a2e07caae325a25519060317e0fdd94af} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+last\+\_\+trigger = -\/math.\+inf}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a95958404c97b76f83f4d72eea98f7fc2}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!t@{t}}
+\index{t@{t}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a95958404c97b76f83f4d72eea98f7fc2} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+t = np.\+empty(0)}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a40a59a083342a354ff682ab482ac2f2b}\index{Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}!y@{y}}
+\index{y@{y}!Generic\_DSO\_Single\_File(1).CaptureEngine@{Generic\_DSO\_Single\_File(1).CaptureEngine}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_engine_a40a59a083342a354ff682ab482ac2f2b} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture\+Engine.\+y = None}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_generic___d_s_o___single___file_01_071_08_8py}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File (1).\+py}}\end{DoxyCompactItemize}

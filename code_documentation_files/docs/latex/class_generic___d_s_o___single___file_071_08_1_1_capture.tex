@@ -1,0 +1,63 @@
+\doxysection{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File(1).Capture Class Reference}
+\hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture}{}\label{class_generic___d_s_o___single___file_071_08_1_1_capture}\index{Generic\_DSO\_Single\_File(1).Capture@{Generic\_DSO\_Single\_File(1).Capture}}
+
+
+Triggered or auto-\/rolled waveform snapshot ready for processing and display.  
+
+
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+np \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_a7a9d52c691bb9a49eea2699679386bfe}{t}} .ndarray
+\begin{DoxyCompactList}\small\item\em Trigger-\/relative timestamps in seconds. \end{DoxyCompactList}\item 
+np \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_a889feed80cb10b42e7e22a1738252b5e}{y}} .ndarray
+\begin{DoxyCompactList}\small\item\em Calibrated 2D sample array of shape (N, num\+\_\+channels). \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_capture_af2a2f367248738c15bb1cdb263045eda}{roll}} = False
+\begin{DoxyCompactList}\small\item\em Absolute device timestamp (s) corresponding to t = 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Triggered or auto-\/rolled waveform snapshot ready for processing and display. 
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_capture_doc-variable-members}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_af2a2f367248738c15bb1cdb263045eda}\index{Generic\_DSO\_Single\_File(1).Capture@{Generic\_DSO\_Single\_File(1).Capture}!roll@{roll}}
+\index{roll@{roll}!Generic\_DSO\_Single\_File(1).Capture@{Generic\_DSO\_Single\_File(1).Capture}}
+\doxysubsubsection{\texorpdfstring{roll}{roll}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_af2a2f367248738c15bb1cdb263045eda} 
+bool \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture.\+roll = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Absolute device timestamp (s) corresponding to t = 0. 
+
+True if captured via a valid edge trigger crossing.
+
+True if any sample within the capture window clipped.
+
+True if captured in continuous Roll mode. \Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_a7a9d52c691bb9a49eea2699679386bfe}\index{Generic\_DSO\_Single\_File(1).Capture@{Generic\_DSO\_Single\_File(1).Capture}!t@{t}}
+\index{t@{t}!Generic\_DSO\_Single\_File(1).Capture@{Generic\_DSO\_Single\_File(1).Capture}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_a7a9d52c691bb9a49eea2699679386bfe} 
+np \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture.\+t .ndarray\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trigger-\/relative timestamps in seconds. 
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_capture_a889feed80cb10b42e7e22a1738252b5e}\index{Generic\_DSO\_Single\_File(1).Capture@{Generic\_DSO\_Single\_File(1).Capture}!y@{y}}
+\index{y@{y}!Generic\_DSO\_Single\_File(1).Capture@{Generic\_DSO\_Single\_File(1).Capture}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_capture_a889feed80cb10b42e7e22a1738252b5e} 
+np \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Capture.\+y .ndarray\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calibrated 2D sample array of shape (N, num\+\_\+channels). 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_generic___d_s_o___single___file_01_071_08_8py}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File (1).\+py}}\end{DoxyCompactItemize}

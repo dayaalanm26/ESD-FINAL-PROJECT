@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).CaptureEngine.clear" name="Generic_DSO_Single_File(1).CaptureEngine.clear">
+<area shape="rect" id="Node000001" title="Flushes all buffered sample history and resets trigger timestamps." alt="" coords="254,51,440,93"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_capture_engine.html#a7f302ab883395ccbf947560a0afad444" title="Initializes the capture buffer arrays." alt="" coords="26,5,185,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,56,185,50,185,44,241,55"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_capture_engine.html#aafd11ecb581a0fa12a1512240d1323b6" title="Appends a new Frame to the circular history buffer." alt="" coords="5,88,206,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,89,206,96,206,91,241,88"/>
+</map>

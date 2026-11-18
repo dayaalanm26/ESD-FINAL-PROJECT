@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,124,40"/>
+<area shape="rect" id="Node000001" href="$class_generic___d_s_o___single___file_071_08_1_1_reader.html" title="Background daemon thread reading newline&#45;delimited JSON packets over Serial or TCP." alt="" coords="172,5,317,48"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="139,24,174,26,169,27,139,29"/>
+</map>

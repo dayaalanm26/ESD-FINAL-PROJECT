@@ -1,0 +1,9 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.displayed_channel" name="Generic_DSO_Single_File(1).ScopeWindow.displayed_channel">
+<area shape="rect" id="Node000001" title="Returns the processed, coupled, and probe&#45;scaled trace array for channel i." alt="" coords="5,47,216,105"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a840aab90520b76b49cee2ec6484ba1c2" title="Retrieves the DC baseline subtracted during AC coupling for channel ch." alt="" coords="273,5,442,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,56,260,51,255,52,217,61"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7bda3d8f84691c35ae906eceecd128f3" title="Returns the numeric probe attenuation multiplier (1.0, 10.0, or 100.0) for channel i." alt="" coords="264,88,451,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="216,91,251,99,246,99,216,96"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="499,5,686,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="442,32,486,34,481,35,443,37"/>
+</map>

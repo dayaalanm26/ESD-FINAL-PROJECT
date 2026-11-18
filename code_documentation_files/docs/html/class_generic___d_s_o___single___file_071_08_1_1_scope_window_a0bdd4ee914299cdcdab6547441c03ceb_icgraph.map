@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow._render_capture" name="Generic_DSO_Single_File(1).ScopeWindow._render_capture">
+<area shape="rect" id="Node000001" title="Renders all active traces, glow overlays, sample dots, stacked lanes, and trigger markers." alt="" coords="237,5,392,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a5ee1544a8ee2c8c58a30fb68cc36d3df" title="Rate&#45;limits waveform rendering to 60 FPS and triggers _render_capture." alt="" coords="5,5,189,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,35,189,37,189,32,223,34"/>
+</map>

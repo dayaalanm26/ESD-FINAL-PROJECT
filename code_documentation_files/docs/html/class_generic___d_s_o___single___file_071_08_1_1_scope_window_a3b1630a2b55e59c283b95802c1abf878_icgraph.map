@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.autorange_capture" name="Generic_DSO_Single_File(1).ScopeWindow.autorange_capture">
+<area shape="rect" id="Node000001" title="Continuously adjusts vertical scale, offset, timebase, and trigger level to track live signals." alt="" coords="229,5,441,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a95a4fb689bf9e87f8dc1084f4058983e" title="Periodic 16 ms GUI timer callback draining the reader queue, triggering captures, and updating diagno..." alt="" coords="5,13,181,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,35,181,37,181,32,216,34"/>
+</map>

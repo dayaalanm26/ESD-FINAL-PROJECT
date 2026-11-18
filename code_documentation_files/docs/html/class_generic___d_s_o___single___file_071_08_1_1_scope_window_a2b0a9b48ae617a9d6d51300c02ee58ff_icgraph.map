@@ -1,0 +1,42 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.reset_processing" name="Generic_DSO_Single_File(1).ScopeWindow.reset_processing">
+<area shape="rect" id="Node000001" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="786,400,971,459"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad96e3026574d343eaeb7c0175041fdc9" title="Slot triggered when acquisition mode, average count, or Hi&#45;Res width changes." alt="" coords="521,5,738,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="868,384,853,320,828,240,790,158,765,119,736,85,716,67,715,62,740,81,770,116,795,155,833,238,858,318,873,386"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a3f757987a6b0219490c9d794c0764ab7" title="Clears old buffer data and starts continuous or single&#45;shot acquisition." alt="" coords="541,333,718,376"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="769,398,703,379,703,374,774,397"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a95a4fb689bf9e87f8dc1084f4058983e" title="Periodic 16 ms GUI timer callback draining the reader queue, triggering captures, and updating diagno..." alt="" coords="20,257,195,300"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="853,386,805,314,773,275,737,241,671,193,614,165,553,146,472,129,412,116,363,108,316,111,259,129,215,155,176,190,146,227,124,258,120,256,142,224,173,187,211,151,257,124,315,106,363,103,413,111,474,124,554,141,616,160,674,189,740,237,777,271,809,310,858,387"/>
+<area shape="rect" id="Node000011" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#afa20df0c825eb4cf6352ffe42bd6bbfa" title="Handles channel coupling changes by resetting averaging and updating measurements." alt="" coords="530,400,730,459"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="768,430,731,432,730,427,773,429"/>
+<area shape="rect" id="Node000012" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a30a9016408dabcceed74936ba5c05a0d" title="Clears the currently displayed waveform and hides trace markers." alt="" coords="538,251,721,309"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="831,390,787,357,737,324,716,313,716,307,740,319,790,352,836,390"/>
+<area shape="rect" id="Node000015" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a341fc249eb7726fb1954f18c31034e9d" title="Rescales vertical scale, offset, and trigger level proportionally when probe attenuation changes." alt="" coords="536,483,723,541"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="771,465,721,484,719,480,776,463"/>
+<area shape="rect" id="Node000016" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af8e533e687601347e17b4c4378626f8f" title="Synchronizes vertical scale slider and redraws when V/div dropdown changes." alt="" coords="536,565,723,624"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="842,469,795,515,740,556,718,567,716,562,737,551,791,511,837,471"/>
+<area shape="rect" id="Node000017" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a9723813e154238614be2db32c005c7d0" title="Resets capture buffer and updates plot axes when time/division changes." alt="" coords="540,648,720,707"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="860,471,840,513,813,557,779,600,740,638,721,651,719,646,737,634,775,597,808,554,835,510,856,474"/>
+<area shape="rect" id="Node000019" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a96149dc8184c0fa6e75a46f26dca35e0" title="Resets trigger holdoff and refreshes level suffixes/markers when trigger settings change." alt="" coords="534,731,725,789"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="869,472,853,530,826,596,789,662,766,693,740,721,724,733,722,728,737,717,762,690,785,659,821,593,848,528,865,476"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ab896e495cf3278a38177655a83836ae7" title="Configures channel names, units, presets, and auto&#45;arming upon receiving a device Metadata packet." alt="" coords="268,288,462,347"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="523,341,464,334,462,328,528,339"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a792c6e12945c128b64b62bb089f07c6e" title="Clears stale captures, persists updated channel profiles, and restarts acquisition if previously runn..." alt="" coords="273,371,458,429"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="524,374,459,387,457,382,528,371"/>
+<area shape="rect" id="Node000009" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad0af9c6d83d44fd1af81966777ed9367" title="Arms the oscilloscope for a single triggered capture event." alt="" coords="271,453,460,496"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="527,385,523,390,508,403,499,416,490,430,475,444,453,455,450,450,471,439,486,426,495,413,504,399,519,386,531,382"/>
+<area shape="rect" id="Node000010" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad49a19eee4c87a0c4a2af08bfafbe50f" title="Toggles continuous acquisition between RUN and STOP (or arms pending run before HELLO)." alt="" coords="258,520,473,563"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="530,381,523,390,511,404,504,418,500,448,495,479,488,495,475,510,459,522,456,517,471,506,483,492,490,477,494,448,499,417,506,401,519,386,526,384"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="250,302,197,294,195,289,255,299"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a588f0e40b2b7190596035d6a4e5a6973" title="Opens an interactive two&#45;point voltage calibration dialog with safety bounds checking." alt="" coords="5,411,210,469"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="256,418,211,426,209,422,260,415"/>
+<area shape="rect" id="Node000008" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a63cad47fda73bd1c7543e9b68eb4afd9" title="Prompts the user and restores CH1 software calibration to unity (gain=1.0, offset=0...." alt="" coords="15,328,200,387"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="255,384,201,375,199,370,260,381"/>
+<area shape="poly" id="edge12_Node000012_Node000004" title=" " alt="" coords="520,296,464,306,462,301,525,294"/>
+<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="528,318,522,324,499,342,474,361,452,372,449,368,472,356,495,338,520,319,532,315"/>
+<area shape="rect" id="Node000013" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ababcb91f3cad2568bcc5dbd55e94bf44" title="Opens ProfileDialog and applies edited board profile and channel parameters." alt="" coords="261,139,470,181"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="565,243,472,196,444,185,443,179,474,191,570,242"/>
+<area shape="rect" id="Node000014" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#abe78099c6ed81f2625e499fcb09cef69" title="Connects to or disconnects from the configured Serial or TCP acquisition target." alt="" coords="270,205,460,264"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="520,263,462,254,460,248,525,261"/>
+<area shape="rect" id="Node000018" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ae55cf33c057215afce12bde1e7e4998d" title="Synchronizes timebase slider and updates horizontal axes when s/div changes." alt="" coords="275,648,456,707"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="521,678,456,680,456,675,526,677"/>
+</map>

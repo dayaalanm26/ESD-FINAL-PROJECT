@@ -1,0 +1,240 @@
+\doxysection{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File(1).Reader Class Reference}
+\hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader}{}\label{class_generic___d_s_o___single___file_071_08_1_1_reader}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+
+
+Background daemon thread reading newline-\/delimited JSON packets over Serial or TCP.  
+
+
+
+
+Inheritance diagram for Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File(1).Reader:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_generic___d_s_o___single___file_071_08_1_1_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File(1).Reader:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_generic___d_s_o___single___file_071_08_1_1_reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a7fb5a3e61d9423f254b724957261d5f5}{\+\_\+\+\_\+init\+\_\+\_}} (self, transport, address, rate)
+\begin{DoxyCompactList}\small\item\em Configures the background transport reader. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_ac745503b32f925a3e61933a92b0dcd76}{post}} (self, kind, value)
+\begin{DoxyCompactList}\small\item\em Posts a decoded item or status event to the GUI event queue. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a2c05f8a781edb65d8266368aa06ac791}{close}} (self)
+\begin{DoxyCompactList}\small\item\em Signals the reader thread to terminate and closes the underlying socket/\+port. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_ad5b52d88c8089b27cfdc4aac04877b8c}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Main thread loop: opens transport, reads chunks, splits lines, and decodes JSON frames. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_abdb919fb4e48ec98c34ca6cb57b461d4}{transport}}
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a758772dd54bf4ea9a9e453ecbeb88959}{address}}
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a94dd2002df98b300595ff83806b57497}{rate}} = \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_abdb919fb4e48ec98c34ca6cb57b461d4}{transport}}, \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a758772dd54bf4ea9a9e453ecbeb88959}{address}}, rate
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a94f1a98d6809e57f543a5ad95462c73e}{events}} = \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_realtime_event_queue}{Realtime\+Event\+Queue}}(maxsize=128)
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a55c0cf5f1341472717fb6be5580f7eb3}{stop\+\_\+event}} = threading.\+Event()
+\item 
+int \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a58a6c86b08c6a65b5a4e5b570caacf7b}{invalid}} = 0
+\item 
+str \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a976506ccc6872b300a4ebac6e3015eab}{last\+\_\+error}} = \textquotesingle{}\textquotesingle{}
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a17ebc5abe92724dd12d5c7940b5025ce}{link}} = None
+\item 
+\doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_ad4e401db164716e9cd1497c196aa4d61}{dropped}} = self.\+events.\+dropped
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Background daemon thread reading newline-\/delimited JSON packets over Serial or TCP. 
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_reader_doc-constructors}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a7fb5a3e61d9423f254b724957261d5f5}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a7fb5a3e61d9423f254b724957261d5f5} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{transport}{, }\item[{}]{address}{, }\item[{}]{rate}{}\end{DoxyParamCaption})}
+
+
+
+Configures the background transport reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & Transport type string ({\ttfamily \textquotesingle{}Serial\textquotesingle{}} or {\ttfamily \textquotesingle{}TCP\textquotesingle{}}). \\
+\hline
+{\em address} & Serial port path (e.\+g., {\ttfamily \textquotesingle{}COM3\textquotesingle{}}) or IP/\+hostname. \\
+\hline
+{\em rate} & Serial baud rate or TCP port number. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_generic___d_s_o___single___file_071_08_1_1_reader_a7fb5a3e61d9423f254b724957261d5f5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_generic___d_s_o___single___file_071_08_1_1_reader_a7fb5a3e61d9423f254b724957261d5f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_reader_doc-func-members}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a2c05f8a781edb65d8266368aa06ac791}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!close@{close}}
+\index{close@{close}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a2c05f8a781edb65d8266368aa06ac791} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Signals the reader thread to terminate and closes the underlying socket/\+port. 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_generic___d_s_o___single___file_071_08_1_1_reader_a2c05f8a781edb65d8266368aa06ac791_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_generic___d_s_o___single___file_071_08_1_1_reader_a2c05f8a781edb65d8266368aa06ac791_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_ac745503b32f925a3e61933a92b0dcd76}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!post@{post}}
+\index{post@{post}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_ac745503b32f925a3e61933a92b0dcd76} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+post (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{kind}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Posts a decoded item or status event to the GUI event queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kind} & Event category ({\ttfamily \textquotesingle{}connected\textquotesingle{}}, {\ttfamily \textquotesingle{}data\textquotesingle{}}, or {\ttfamily \textquotesingle{}error\textquotesingle{}}). \\
+\hline
+{\em value} & Event payload object or message string. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_generic___d_s_o___single___file_071_08_1_1_reader_ac745503b32f925a3e61933a92b0dcd76_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_ad5b52d88c8089b27cfdc4aac04877b8c}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!run@{run}}
+\index{run@{run}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_ad5b52d88c8089b27cfdc4aac04877b8c} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Main thread loop: opens transport, reads chunks, splits lines, and decodes JSON frames. 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_generic___d_s_o___single___file_071_08_1_1_reader_ad5b52d88c8089b27cfdc4aac04877b8c_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_generic___d_s_o___single___file_071_08_1_1_reader_doc-variable-members}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a758772dd54bf4ea9a9e453ecbeb88959}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!address@{address}}
+\index{address@{address}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a758772dd54bf4ea9a9e453ecbeb88959} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+address}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_ad4e401db164716e9cd1497c196aa4d61}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!dropped@{dropped}}
+\index{dropped@{dropped}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{dropped}{dropped}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_ad4e401db164716e9cd1497c196aa4d61} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+dropped = self.\+events.\+dropped}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a94f1a98d6809e57f543a5ad95462c73e}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!events@{events}}
+\index{events@{events}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a94f1a98d6809e57f543a5ad95462c73e} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+events = \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_realtime_event_queue}{Realtime\+Event\+Queue}}(maxsize=128)}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a58a6c86b08c6a65b5a4e5b570caacf7b}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!invalid@{invalid}}
+\index{invalid@{invalid}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{invalid}{invalid}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a58a6c86b08c6a65b5a4e5b570caacf7b} 
+int \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+invalid = 0}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a976506ccc6872b300a4ebac6e3015eab}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!last\_error@{last\_error}}
+\index{last\_error@{last\_error}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{last\_error}{last\_error}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a976506ccc6872b300a4ebac6e3015eab} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+last\+\_\+error = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a17ebc5abe92724dd12d5c7940b5025ce}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!link@{link}}
+\index{link@{link}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{link}{link}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a17ebc5abe92724dd12d5c7940b5025ce} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+link = None}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a94dd2002df98b300595ff83806b57497}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!rate@{rate}}
+\index{rate@{rate}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{rate}{rate}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a94dd2002df98b300595ff83806b57497} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+rate = \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_abdb919fb4e48ec98c34ca6cb57b461d4}{transport}}, \doxymbox{\hyperlink{class_generic___d_s_o___single___file_071_08_1_1_reader_a758772dd54bf4ea9a9e453ecbeb88959}{address}}, rate}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_a55c0cf5f1341472717fb6be5580f7eb3}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!stop\_event@{stop\_event}}
+\index{stop\_event@{stop\_event}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{stop\_event}{stop\_event}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_a55c0cf5f1341472717fb6be5580f7eb3} 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+stop\+\_\+event = threading.\+Event()}
+
+\Hypertarget{class_generic___d_s_o___single___file_071_08_1_1_reader_abdb919fb4e48ec98c34ca6cb57b461d4}\index{Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}!transport@{transport}}
+\index{transport@{transport}!Generic\_DSO\_Single\_File(1).Reader@{Generic\_DSO\_Single\_File(1).Reader}}
+\doxysubsubsection{\texorpdfstring{transport}{transport}}
+{\footnotesize\ttfamily \label{class_generic___d_s_o___single___file_071_08_1_1_reader_abdb919fb4e48ec98c34ca6cb57b461d4} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}}(1).Reader.\+transport}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_generic___d_s_o___single___file_01_071_08_8py}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File (1).\+py}}\end{DoxyCompactItemize}

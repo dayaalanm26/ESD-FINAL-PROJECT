@@ -1,0 +1,16 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.time_changed" name="Generic_DSO_Single_File(1).ScopeWindow.time_changed">
+<area shape="rect" id="Node000001" title="Resets capture buffer and updates plot axes when time/division changes." alt="" coords="5,88,186,147"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a718d2e8071e74090cc73a208a21f5c97" title="Recenters time cursors if they fall outside the current horizontal viewport bounds." alt="" coords="251,5,446,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,85,245,68,240,71,187,90"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a2b0a9b48ae617a9d6d51300c02ee58ff" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="256,88,440,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,115,243,116,238,118,187,120"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7dd06b82d483bbd87fef8c449be773af" title="Configures horizontal X range, X&#45;axis inversion (for Roll mode), ticks, and graticule window." alt="" coords="234,171,463,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,142,234,156,260,166,255,166,233,161,186,147"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="511,129,705,188"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="463,175,498,173,493,173,464,180"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="762,196,945,255"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="463,197,749,218,744,219,463,202"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="753,113,954,172"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="705,150,740,150,735,150,706,155"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="706,182,750,197,744,196,705,188"/>
+</map>

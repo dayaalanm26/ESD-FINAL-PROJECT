@@ -1,0 +1,30 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.set_run_state" name="Generic_DSO_Single_File(1).ScopeWindow.set_run_state">
+<area shape="rect" id="Node000001" title="Updates the RUN/STOP button styling and top status badge." alt="" coords="787,264,961,323"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ab896e495cf3278a38177655a83836ae7" title="Configures channel names, units, presets, and auto&#45;arming upon receiving a device Metadata packet." alt="" coords="268,189,462,248"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="769,267,739,263,594,242,463,228,463,223,595,236,740,257,775,267"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a95a4fb689bf9e87f8dc1084f4058983e" title="Periodic 16 ms GUI timer callback draining the reader queue, triggering captures, and updating diagno..." alt="" coords="20,131,195,173"/>
+<area shape="poly" id="edge14_Node000001_Node000003" title=" " alt="" coords="805,256,738,229,667,208,592,191,443,169,306,157,196,154,195,149,306,152,444,163,593,186,668,203,740,224,811,256"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a3f757987a6b0219490c9d794c0764ab7" title="Clears old buffer data and starts continuous or single&#45;shot acquisition." alt="" coords="542,272,719,315"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="769,294,720,296,719,291,774,293"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a792c6e12945c128b64b62bb089f07c6e" title="Clears stale captures, persists updated channel profiles, and restarts acquisition if previously runn..." alt="" coords="273,339,458,397"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="769,321,740,329,592,351,458,364,458,359,591,345,739,324,775,319"/>
+<area shape="rect" id="Node000009" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad49a19eee4c87a0c4a2af08bfafbe50f" title="Toggles continuous acquisition between RUN and STOP (or arms pending run before HELLO)." alt="" coords="258,421,473,464"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="810,329,740,362,672,384,603,402,474,429,473,424,601,397,671,379,738,358,805,331"/>
+<area shape="rect" id="Node000010" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ababcb91f3cad2568bcc5dbd55e94bf44" title="Opens ProfileDialog and applies edited board profile and channel parameters." alt="" coords="526,440,734,483"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="841,333,795,381,741,424,704,442,702,437,738,419,792,377,836,335"/>
+<area shape="rect" id="Node000011" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ab5b07651f6d770ee363efa940ea6b94b" title="Stops the background Reader thread and resets UI controls to disconnected state." alt="" coords="521,72,739,115"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="844,251,799,193,770,162,738,136,706,118,706,112,741,131,774,158,803,189,849,252"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,191,194,177,192,171,255,188"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="534,268,463,249,463,243,540,267"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="534,320,459,345,457,339,539,319"/>
+<area shape="rect" id="Node000008" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad0af9c6d83d44fd1af81966777ed9367" title="Arms the oscilloscope for a single triggered capture event." alt="" coords="271,272,460,315"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="524,294,461,296,460,291,529,293"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="596,324,540,370,474,412,448,423,446,418,472,407,537,366,591,326"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a588f0e40b2b7190596035d6a4e5a6973" title="Opens an interactive two&#45;point voltage calibration dialog with safety bounds checking." alt="" coords="5,380,210,439"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="255,386,211,396,209,390,260,384"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a63cad47fda73bd1c7543e9b68eb4afd9" title="Prompts the user and restores CH1 software calibration to unity (gain=1.0, offset=0...." alt="" coords="15,297,200,356"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="255,352,200,344,200,339,260,350"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="503,108,258,136,197,143,195,138,257,131,507,104"/>
+<area shape="rect" id="Node000012" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#abe78099c6ed81f2625e499fcb09cef69" title="Connects to or disconnects from the configured Serial or TCP acquisition target." alt="" coords="270,5,460,64"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="514,69,462,58,461,53,519,67"/>
+</map>

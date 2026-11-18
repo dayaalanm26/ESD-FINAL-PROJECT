@@ -1,0 +1,12 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.scan_mode_changed" name="Generic_DSO_Single_File(1).ScopeWindow.scan_mode_changed">
+<area shape="rect" id="Node000001" title="Slot triggered when trigger mode switches between Auto, Normal, and Roll." alt="" coords="5,55,189,113"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7dd06b82d483bbd87fef8c449be773af" title="Configures horizontal X range, X&#45;axis inversion (for Roll mode), ticks, and graticule window." alt="" coords="237,63,466,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,81,224,83,218,85,190,87"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="514,21,708,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="466,67,501,65,496,65,467,72"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="765,88,948,147"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="466,89,752,110,747,111,466,94"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="756,5,957,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="708,42,743,42,738,42,709,47"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="709,74,753,89,747,88,708,80"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).SegmentedControl" name="Generic_DSO_Single_File(1).SegmentedControl">
+<area shape="rect" id="Node000001" title="Mutually exclusive horizontal button bar used for channel coupling selection (DC/AC/GND)." alt="" coords="5,80,182,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="57,5,130,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,46,96,81,91,79,92,50"/>
+</map>

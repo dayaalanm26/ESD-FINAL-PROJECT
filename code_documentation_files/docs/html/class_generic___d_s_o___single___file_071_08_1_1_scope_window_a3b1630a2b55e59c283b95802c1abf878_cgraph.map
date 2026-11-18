@@ -1,0 +1,11 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.autorange_capture" name="Generic_DSO_Single_File(1).ScopeWindow.autorange_capture">
+<area shape="rect" id="Node000001" title="Continuously adjusts vertical scale, offset, timebase, and trigger level to track live signals." alt="" coords="5,47,218,105"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a9374880a6281b4d55658866cc12edac7" title="Returns the processed, coupled, and probe&#45;scaled trace array for channel i." alt="" coords="266,47,476,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,73,253,76,248,76,218,79"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a840aab90520b76b49cee2ec6484ba1c2" title="Retrieves the DC baseline subtracted during AC coupling for channel ch." alt="" coords="533,5,702,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="476,56,520,51,515,52,477,61"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7bda3d8f84691c35ae906eceecd128f3" title="Returns the numeric probe attenuation multiplier (1.0, 10.0, or 100.0) for channel i." alt="" coords="524,88,711,147"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="477,91,511,99,506,99,476,96"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="759,5,947,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="703,32,746,34,741,35,703,37"/>
+</map>

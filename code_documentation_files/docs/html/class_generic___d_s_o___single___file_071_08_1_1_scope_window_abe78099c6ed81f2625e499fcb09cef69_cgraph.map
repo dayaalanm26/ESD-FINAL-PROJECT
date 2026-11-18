@@ -1,0 +1,36 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.toggle_connection" name="Generic_DSO_Single_File(1).ScopeWindow.toggle_connection">
+<area shape="rect" id="Node000001" title="Connects to or disconnects from the configured Serial or TCP acquisition target." alt="" coords="5,247,196,305"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a30a9016408dabcceed74936ba5c05a0d" title="Clears the currently displayed waveform and hides trace markers." alt="" coords="261,147,444,205"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,244,265,210,261,213,178,248"/>
+<area shape="rect" id="Node000013" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a1c937c8de6fbd3e4d7c0ceaad49b321b" title="Enables or disables channel, trigger, and export controls based on link and capture readiness." alt="" coords="510,247,711,305"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="196,273,495,274,493,278,196,279"/>
+<area shape="rect" id="Node000014" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ab5b07651f6d770ee363efa940ea6b94b" title="Stops the background Reader thread and resets UI controls to disconnected state." alt="" coords="244,317,462,360"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="196,297,252,312,247,314,196,302"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a2b0a9b48ae617a9d6d51300c02ee58ff" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="518,31,703,89"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="413,144,509,99,525,94,520,97,511,104,416,149"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a095bd9efc046c566b3eb11b58837684f" title="Recomputes waveform metrics for the selected measurement channel and updates metric cards." alt="" coords="514,113,708,172"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="444,162,501,156,496,158,446,167"/>
+<area shape="rect" id="Node000011" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="759,196,954,255"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="445,182,746,213,741,216,445,188"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a9374880a6281b4d55658866cc12edac7" title="Returns the processed, coupled, and probe&#45;scaled trace array for channel i." alt="" coords="1002,47,1212,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="707,110,759,99,875,84,988,78,983,80,876,89,760,104,709,115"/>
+<area shape="rect" id="Node000009" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a0bf8dbf29d366743bcb48b3b39dc1bfe" title="Updates the reference comparison banner and scale/gain audit bar with input vs display metrics." alt="" coords="759,113,954,172"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="708,140,746,142,741,143,709,145"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="700,170,755,190,750,191,700,175"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a840aab90520b76b49cee2ec6484ba1c2" title="Retrieves the DC baseline subtracted during AC coupling for channel ch." alt="" coords="1269,5,1438,64"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1212,56,1256,51,1251,52,1213,61"/>
+<area shape="rect" id="Node000008" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7bda3d8f84691c35ae906eceecd128f3" title="Returns the numeric probe attenuation multiplier (1.0, 10.0, or 100.0) for channel i." alt="" coords="1260,88,1447,147"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1212,91,1247,99,1242,99,1213,96"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="1495,5,1683,64"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1439,32,1482,34,1477,35,1439,37"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="954,114,989,107,984,109,955,119"/>
+<area shape="rect" id="Node000010" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="1015,129,1198,188"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="954,146,1002,151,997,152,955,152"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="954,197,998,188,1003,186,955,202"/>
+<area shape="rect" id="Node000012" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="1007,212,1207,271"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="954,229,994,234,988,234,954,234"/>
+<area shape="poly" id="edge19_Node000014_Node000011" title=" " alt="" coords="462,344,520,343,583,340,648,331,710,315,762,292,805,265,810,263,764,296,712,320,649,336,584,345,520,349,462,349"/>
+<area shape="poly" id="edge17_Node000014_Node000013" title=" " alt="" coords="443,314,498,303,493,305,444,319"/>
+<area shape="rect" id="Node000015" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7340f3b4386a2aba580739140718d347" title="Updates the RUN/STOP button styling and top status badge." alt="" coords="524,380,697,439"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="434,358,512,382,506,382,433,363"/>
+</map>

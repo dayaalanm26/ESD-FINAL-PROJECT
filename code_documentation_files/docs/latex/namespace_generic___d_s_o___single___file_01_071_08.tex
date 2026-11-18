@@ -1,0 +1,703 @@
+\doxysection{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File (1) Namespace Reference}
+\hypertarget{namespace_generic___d_s_o___single___file_01_071_08}{}\label{namespace_generic___d_s_o___single___file_01_071_08}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_abca4b39c243c3b175d295d6a5f32889e}{number}} (x)
+\begin{DoxyCompactList}\small\item\em Validates and converts a JSON numeric value to a finite Python float. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ad3b436f0d27a940dca0f8a8195d02d49}{measurements}} (t, y)
+\begin{DoxyCompactList}\small\item\em Computes standard oscilloscope waveform metrics (Vpp, Mean, RMS, Min, Max, Freq, Period, Duty). \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_aeffe630ea87416a432f5c553892d678f}{display\+\_\+interpolate}} (t, y, pixels, method=\textquotesingle{}Sin(x)/x\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Applies windowed sinc interpolation on a display copy for sparse, uniformly timed data. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a5e4bd66838ed5317423ae6d9368c0ef3}{looks\+\_\+like\+\_\+pwm}} (y)
+\begin{DoxyCompactList}\small\item\em Heuristic check determining whether a trace resembles a two-\/level PWM/\+digital signal. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a0b02573cd81ef2737899133c781bcb0c}{pwm\+\_\+hold\+\_\+trace}} (t, y)
+\begin{DoxyCompactList}\small\item\em Constructs sample-\/and-\/hold step vertices with vertical transitions at sample midpoints. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a2b5185d3fb92dd114338404a36ee7df4}{estimate\+\_\+plateaus}} (samples)
+\begin{DoxyCompactList}\small\item\em Estimates stable low and high plateau levels of a square wave using interquartile medians. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a65b2c786e2e6451bf46589726bb0773e}{fit\+\_\+two\+\_\+point}} (samples, current\+\_\+gain, current\+\_\+offset, reference\+\_\+low, reference\+\_\+high)
+\begin{DoxyCompactList}\small\item\em Computes new linear calibration coefficients ({\ttfamily raw \texorpdfstring{$\ast$}{*} gain + offset}) from a known square wave. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a2da36dea5636c6c73f723b2dda296fff}{fit\+\_\+voltage\+\_\+scale}} (values, scale\+\_\+steps, divisions=8)
+\begin{DoxyCompactList}\small\item\em Selects a 1-\/2-\/5 vertical scale step and center offset leaving \texorpdfstring{$>$}{>}= 1 division margin. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_afdccd016f13bdd007f9d6b45dc17dc26}{display\+\_\+range\+\_\+health}} (values, volts\+\_\+per\+\_\+division, position, divisions=8)
+\begin{DoxyCompactList}\small\item\em Evaluates what fraction of a trace extends outside the vertical graticule bounds. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_afe55d5497f4f8c277a8e87a4d03b5947}{raw\+\_\+span\+\_\+from\+\_\+calibrated}} (calibrated\+\_\+values, gain)
+\begin{DoxyCompactList}\small\item\em Recovers the uncalibrated input peak-\/to-\/peak span by dividing out {\ttfamily gain}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a2f2da8b6c115d40622adbbefa714da58}{suspicious\+\_\+gain}} (gain)
+\begin{DoxyCompactList}\small\item\em Checks whether a software channel gain lies outside the normal \+[0.\+2, 5.\+0] range. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a22c1bdec7c8b6bdc1025d9e272c4c44c}{repolish}} (widget)
+\begin{DoxyCompactList}\small\item\em Forces Qt to re-\/evaluate dynamic property QSS rules on a widget. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_afbeea1fb4d3907618c5ad2310a2fee78}{stylesheet}} ()
+\begin{DoxyCompactList}\small\item\em Builds the complete Qt Style Sheet (QSS) for the instrument UI. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ad4d2c66f37cb0cadf99d9df2bafb1090}{channel\+\_\+style}} (color)
+\begin{DoxyCompactList}\small\item\em Generates per-\/channel toggle button QSS with trace color accents. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ac4bd50eb7249f2f6363fc3c84b4d1e6f}{fmt}} (value, unit=\textquotesingle{}\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Formats a numeric value using SI engineering prefixes (n, µ, m, k, M, G). \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a80d2018b86442290dd8d4fb01c963726}{combo}} (items)
+\begin{DoxyCompactList}\small\item\em Helper factory creating a populated QCombo\+Box. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a01df960000d6dd413370895a90b45f87}{spin}} (value=0, low=-\/1e9, high=1e9, decimals=6)
+\begin{DoxyCompactList}\small\item\em Helper factory creating a QDouble\+Spin\+Box with keyboard tracking disabled. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a51af30a60f9f02777c6396b8247e356f}{main}} ()
+\begin{DoxyCompactList}\small\item\em Application entry point initializing QApplication, default UI fonts, and \doxylink{class_generic___d_s_o___single___file_071_08_1_1_scope_window}{Scope\+Window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ae4ea024e5dea5d692b31bb91fbc9f55a}{MAX\+\_\+\+POINTS}} = 65536
+\begin{DoxyCompactList}\small\item\em Maximum number of sample points retained in the capture ring buffer. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_adea368c760f0ac2a1e6a6d78371b566c}{MAX\+\_\+\+LINE}} = 2\+\_\+000\+\_\+000
+\begin{DoxyCompactList}\small\item\em Maximum allowed incoming JSON message size in bytes (2 MB). \end{DoxyCompactList}\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ab1b63ae69e9b88968bf57544ac7f574a}{BG}} = \textquotesingle{}\+\#F3\+F7\+FC\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a8127aca51ef8ac912ff11ef338b2d145}{PANEL}} = \textquotesingle{}\+\#FFFFFF\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a06a0a94087e15ec3f61725994d8117a5}{CARD}} = \textquotesingle{}\+\#F7\+F9\+FD\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_acd4ce2f7ea90db15d7cd9bd475d847e5}{BORDER}} = \textquotesingle{}\+\#DCE4\+EF\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a1363720540cc31da4235d05b442bed76}{ACCENT}} = \textquotesingle{}\+\#3263D9\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a691240cbe7fe30e4c5ddac66b36ebc48}{HOVER}} = \textquotesingle{}\+\#2453C7\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a45be301e6e8bcb6276ed57c02ea94292}{PRESSED}} = \textquotesingle{}\+\#1644AC\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a07c690534cdaa69758aaca003b5b9c9d}{ACCENT\+\_\+\+TEXT}} = \textquotesingle{}\+\#FFFFFF\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ac4fb4979e249e6c8cc9dd58c5ab67814}{SOFT}} = \textquotesingle{}\+\#E8\+EEFF\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a2ea7a1af7e8f2d723d51915722984a97}{SOFT\+\_\+\+TEXT}} = \textquotesingle{}\+\#1943A3\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a9a5597e2962a059941b14fae0f5d01e3}{TEXT}} = \textquotesingle{}\+\#19283E\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_abcbc1eb48dadfc8b75bbc16fa26bb1f0}{MUTED}} = \textquotesingle{}\+\#63728B\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a3edde4c4090d0393b7774743724ccb4b}{SCREEN}} = \textquotesingle{}\+\#FFFFFF\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ae9a1f37977d2c221054b679a3fa28b94}{GRID}} = \textquotesingle{}\+\#CAD7\+E7\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ab7fe3ee054655e7d8c72c03a69869226}{AXES}} = \textquotesingle{}\+\#98A9\+BD\textquotesingle{}
+\item 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a0a9e778c80fb9b4ec6533da654dea994}{COLORS}} = \+[\textquotesingle{}\+\#C87900\textquotesingle{}, \textquotesingle{}\+\#007E99\textquotesingle{}, \textquotesingle{}\+\#9556BD\textquotesingle{}, \textquotesingle{}\+\#19825B\textquotesingle{}]
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_aa584ea94db8a0ba44192ca4c723ac389}{TRIGGER}} = \textquotesingle{}\+\#B65843\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a484534b78a270038f408cdb74dd958b1}{CURSOR}} = \textquotesingle{}\+\#334A70\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a1553fced84a9b4fa1b025b2ff97d6395}{OK}} = \textquotesingle{}\+\#147954\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a92f8b3944a9aea793e44432646ef4b4e}{WARNING}} = \textquotesingle{}\+\#A45\+D0B\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ab03c667a5b4c1b45267296863bb79106}{ERROR}} = \textquotesingle{}\+\#B42337\textquotesingle{}
+\item 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a945e621d78ef84d5087452d0719ce1f5}{UI\+\_\+\+FONTS}} = \+[\textquotesingle{}Segoe UI\textquotesingle{}, \textquotesingle{}Inter\textquotesingle{}, \textquotesingle{}Helvetica Neue\textquotesingle{}, \textquotesingle{}Deja\+Vu Sans\textquotesingle{}, \textquotesingle{}sans-\/serif\textquotesingle{}]
+\item 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a13d9881c67a044f57aa8e603b8c17f9f}{MONO\+\_\+\+FONTS}} = \+[\textquotesingle{}Cascadia Code\textquotesingle{}, \textquotesingle{}Consolas\textquotesingle{}, \textquotesingle{}Jet\+Brains Mono\textquotesingle{}, \textquotesingle{}Deja\+Vu Sans Mono\textquotesingle{}, \textquotesingle{}monospace\textquotesingle{}]
+\item 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_a9ffd0cc55f96211185ce82374b52dc44}{SCALES}} = \+[1e-\/6, 2e-\/6, 5e-\/6, 1e-\/5, 2e-\/5, 5e-\/5, .\+0001, .\+0002, .\+0005, .\+001, .\+002, .\+005, .\+01, .\+02, .\+05, .\+1, .\+2, .\+5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
+\begin{DoxyCompactList}\small\item\em Standard 1-\/2-\/5 vertical scale steps in base units/\+division. \end{DoxyCompactList}\item 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_ac27506893a8a6c0cc8f08d66ce8947cd}{TIME\+\_\+\+SCALES}} = \+[1e-\/6, 2e-\/6, 5e-\/6, 1e-\/5, 2e-\/5, 5e-\/5, .\+0001, .\+0002, .\+0005, .\+001, .\+002, .\+005, .\+01, .\+02, .\+05, .\+1, .\+2, .\+5, 1, 2, 5, 10, 20, 50, 100]
+\begin{DoxyCompactList}\small\item\em Standard 1-\/2-\/5 horizontal timebase steps in seconds/\+division. \end{DoxyCompactList}\item 
+dict \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file_01_071_08_acc6bc2158af040feb8575d0eaeecb09a}{SENSOR\+\_\+\+UNITS}}
+\begin{DoxyCompactList}\small\item\em Mapping of physical sensor presets to default engineering unit symbols. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{namespace_generic___d_s_o___single___file_01_071_08_doc-func-members}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ad4d2c66f37cb0cadf99d9df2bafb1090}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!channel\_style@{channel\_style}}
+\index{channel\_style@{channel\_style}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{channel\_style()}{channel\_style()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ad4d2c66f37cb0cadf99d9df2bafb1090} 
+channel\+\_\+style (\begin{DoxyParamCaption}\item[{}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Generates per-\/channel toggle button QSS with trace color accents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Hex color string for the active channel trace. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QSS snippet string. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a80d2018b86442290dd8d4fb01c963726}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!combo@{combo}}
+\index{combo@{combo}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{combo()}{combo()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a80d2018b86442290dd8d4fb01c963726} 
+combo (\begin{DoxyParamCaption}\item[{}]{items}{}\end{DoxyParamCaption})}
+
+
+
+Helper factory creating a populated QCombo\+Box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & Iterable of string labels. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Configured QCombo\+Box instance. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_aeffe630ea87416a432f5c553892d678f}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!display\_interpolate@{display\_interpolate}}
+\index{display\_interpolate@{display\_interpolate}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{display\_interpolate()}{display\_interpolate()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_aeffe630ea87416a432f5c553892d678f} 
+display\+\_\+interpolate (\begin{DoxyParamCaption}\item[{}]{t}{, }\item[{}]{y}{, }\item[{}]{pixels}{, }\item[{}]{method}{ = {\ttfamily \textquotesingle{}Sin(x)/x\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+
+Applies windowed sinc interpolation on a display copy for sparse, uniformly timed data. 
+
+Retains all original sample points so extrema and spikes are never lost. 
+\begin{DoxyParams}{Parameters}
+{\em t} & 1D array of sample timestamps. \\
+\hline
+{\em y} & 1D array of sample amplitudes (in screen divisions). \\
+\hline
+{\em pixels} & Horizontal viewport width in pixels. \\
+\hline
+{\em method} & Interpolation mode ({\ttfamily \textquotesingle{}Sin(x)/\+x\textquotesingle{}} or {\ttfamily \textquotesingle{}Linear\textquotesingle{}}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple {\ttfamily (times, values)} of interpolated trace coordinates. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_afdccd016f13bdd007f9d6b45dc17dc26}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!display\_range\_health@{display\_range\_health}}
+\index{display\_range\_health@{display\_range\_health}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{display\_range\_health()}{display\_range\_health()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_afdccd016f13bdd007f9d6b45dc17dc26} 
+display\+\_\+range\+\_\+health (\begin{DoxyParamCaption}\item[{}]{values}{, }\item[{}]{volts\+\_\+per\+\_\+division}{, }\item[{}]{position}{, }\item[{}]{divisions}{ = {\ttfamily 8}}\end{DoxyParamCaption})}
+
+
+
+Evaluates what fraction of a trace extends outside the vertical graticule bounds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & Sample values in display units. \\
+\hline
+{\em volts\+\_\+per\+\_\+division} & Vertical scale setting per division. \\
+\hline
+{\em position} & Vertical center offset in display units. \\
+\hline
+{\em divisions} & Total vertical graticule divisions (default 8). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple {\ttfamily (outside\+\_\+fraction, is\+\_\+clipped)}. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a2b5185d3fb92dd114338404a36ee7df4}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!estimate\_plateaus@{estimate\_plateaus}}
+\index{estimate\_plateaus@{estimate\_plateaus}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{estimate\_plateaus()}{estimate\_plateaus()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a2b5185d3fb92dd114338404a36ee7df4} 
+estimate\+\_\+plateaus (\begin{DoxyParamCaption}\item[{}]{samples}{}\end{DoxyParamCaption})}
+
+
+
+Estimates stable low and high plateau levels of a square wave using interquartile medians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & 1D array of uncalibrated raw samples (minimum 25 samples). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple {\ttfamily (low\+\_\+median, high\+\_\+median)}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Value\+Error} & If sample count is insufficient or waveform is flat. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_generic___d_s_o___single___file_01_071_08_a2b5185d3fb92dd114338404a36ee7df4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a65b2c786e2e6451bf46589726bb0773e}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!fit\_two\_point@{fit\_two\_point}}
+\index{fit\_two\_point@{fit\_two\_point}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{fit\_two\_point()}{fit\_two\_point()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a65b2c786e2e6451bf46589726bb0773e} 
+fit\+\_\+two\+\_\+point (\begin{DoxyParamCaption}\item[{}]{samples}{, }\item[{}]{current\+\_\+gain}{, }\item[{}]{current\+\_\+offset}{, }\item[{}]{reference\+\_\+low}{, }\item[{}]{reference\+\_\+high}{}\end{DoxyParamCaption})}
+
+
+
+Computes new linear calibration coefficients ({\ttfamily raw \texorpdfstring{$\ast$}{*} gain + offset}) from a known square wave. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & 1D array of already-\/calibrated captured samples. \\
+\hline
+{\em current\+\_\+gain} & Existing channel gain multiplier. \\
+\hline
+{\em current\+\_\+offset} & Existing channel additive offset. \\
+\hline
+{\em reference\+\_\+low} & Independently verified physical LOW voltage. \\
+\hline
+{\em reference\+\_\+high} & Independently verified physical HIGH voltage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_generic___d_s_o___single___file_071_08_1_1_calibration_result}{Calibration\+Result} instance containing updated coefficients and safety flags. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Value\+Error} & If inputs are non-\/finite, zero gain, inverted references, or flat signal. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_generic___d_s_o___single___file_01_071_08_a65b2c786e2e6451bf46589726bb0773e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a2da36dea5636c6c73f723b2dda296fff}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!fit\_voltage\_scale@{fit\_voltage\_scale}}
+\index{fit\_voltage\_scale@{fit\_voltage\_scale}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{fit\_voltage\_scale()}{fit\_voltage\_scale()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a2da36dea5636c6c73f723b2dda296fff} 
+fit\+\_\+voltage\+\_\+scale (\begin{DoxyParamCaption}\item[{}]{values}{, }\item[{}]{scale\+\_\+steps}{, }\item[{}]{divisions}{ = {\ttfamily 8}}\end{DoxyParamCaption})}
+
+
+
+Selects a 1-\/2-\/5 vertical scale step and center offset leaving \texorpdfstring{$>$}{>}= 1 division margin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & Array of sample values to fit vertically. \\
+\hline
+{\em scale\+\_\+steps} & Sorted sequence of allowed scale values per division. \\
+\hline
+{\em divisions} & Total vertical graticule divisions (default 8). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple {\ttfamily (volts\+\_\+per\+\_\+division, vertical\+\_\+midpoint)} or None if no finite data exists. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ac4bd50eb7249f2f6363fc3c84b4d1e6f}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!fmt@{fmt}}
+\index{fmt@{fmt}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{fmt()}{fmt()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ac4bd50eb7249f2f6363fc3c84b4d1e6f} 
+fmt (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{unit}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+
+Formats a numeric value using SI engineering prefixes (n, µ, m, k, M, G). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Numeric quantity to format (or None/\+\+NaN). \\
+\hline
+{\em unit} & Physical unit suffix string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Formatted string (e.\+g., {\ttfamily \textquotesingle{}3.\+3 V\textquotesingle{}}, {\ttfamily \textquotesingle{}500 ms\textquotesingle{}}, {\ttfamily \textquotesingle{}—\textquotesingle{}}). 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a5e4bd66838ed5317423ae6d9368c0ef3}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!looks\_like\_pwm@{looks\_like\_pwm}}
+\index{looks\_like\_pwm@{looks\_like\_pwm}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{looks\_like\_pwm()}{looks\_like\_pwm()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a5e4bd66838ed5317423ae6d9368c0ef3} 
+looks\+\_\+like\+\_\+pwm (\begin{DoxyParamCaption}\item[{}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Heuristic check determining whether a trace resembles a two-\/level PWM/\+digital signal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & 1D array of trace values (in divisions). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if \texorpdfstring{$>$}{>}= 86\% of samples cluster near the min and max plateaus with span \texorpdfstring{$>$}{>}= 0.\+28 div. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a51af30a60f9f02777c6396b8247e356f}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!main@{main}}
+\index{main@{main}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a51af30a60f9f02777c6396b8247e356f} 
+main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Application entry point initializing QApplication, default UI fonts, and \doxylink{class_generic___d_s_o___single___file_071_08_1_1_scope_window}{Scope\+Window}. 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{namespace_generic___d_s_o___single___file_01_071_08_a51af30a60f9f02777c6396b8247e356f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{namespace_generic___d_s_o___single___file_01_071_08_a51af30a60f9f02777c6396b8247e356f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ad3b436f0d27a940dca0f8a8195d02d49}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!measurements@{measurements}}
+\index{measurements@{measurements}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{measurements()}{measurements()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ad3b436f0d27a940dca0f8a8195d02d49} 
+measurements (\begin{DoxyParamCaption}\item[{}]{t}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Computes standard oscilloscope waveform metrics (Vpp, Mean, RMS, Min, Max, Freq, Period, Duty). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & 1D array of sample timestamps in seconds. \\
+\hline
+{\em y} & 1D array of sample amplitudes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary mapping metric keys to float values (or None if unmeasurable). 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_abca4b39c243c3b175d295d6a5f32889e}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!number@{number}}
+\index{number@{number}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{number()}{number()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_abca4b39c243c3b175d295d6a5f32889e} 
+number (\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Validates and converts a JSON numeric value to a finite Python float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Input value to validate (rejects booleans, Na\+Ns, and infinities). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Finite float value. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_generic___d_s_o___single___file_071_08_1_1_protocol_error}{Protocol\+Error}} & If {\ttfamily x} is not a finite int or float. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a0b02573cd81ef2737899133c781bcb0c}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!pwm\_hold\_trace@{pwm\_hold\_trace}}
+\index{pwm\_hold\_trace@{pwm\_hold\_trace}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{pwm\_hold\_trace()}{pwm\_hold\_trace()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a0b02573cd81ef2737899133c781bcb0c} 
+pwm\+\_\+hold\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{t}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Constructs sample-\/and-\/hold step vertices with vertical transitions at sample midpoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & 1D strictly increasing timestamp array. \\
+\hline
+{\em y} & 1D sample amplitude array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple {\ttfamily (tx, vy)} of expanded 2N vertex arrays for step rendering. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Value\+Error} & If lengths differ or timestamps do not strictly increase. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_afe55d5497f4f8c277a8e87a4d03b5947}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!raw\_span\_from\_calibrated@{raw\_span\_from\_calibrated}}
+\index{raw\_span\_from\_calibrated@{raw\_span\_from\_calibrated}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{raw\_span\_from\_calibrated()}{raw\_span\_from\_calibrated()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_afe55d5497f4f8c277a8e87a4d03b5947} 
+raw\+\_\+span\+\_\+from\+\_\+calibrated (\begin{DoxyParamCaption}\item[{}]{calibrated\+\_\+values}{, }\item[{}]{gain}{}\end{DoxyParamCaption})}
+
+
+
+Recovers the uncalibrated input peak-\/to-\/peak span by dividing out {\ttfamily gain}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calibrated\+\_\+values} & Array of calibrated sample values. \\
+\hline
+{\em gain} & Applied linear channel gain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Peak-\/to-\/peak raw input span, or None if invalid. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a22c1bdec7c8b6bdc1025d9e272c4c44c}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!repolish@{repolish}}
+\index{repolish@{repolish}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{repolish()}{repolish()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a22c1bdec7c8b6bdc1025d9e272c4c44c} 
+repolish (\begin{DoxyParamCaption}\item[{}]{widget}{}\end{DoxyParamCaption})}
+
+
+
+Forces Qt to re-\/evaluate dynamic property QSS rules on a widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & QWidget whose style needs refreshing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a01df960000d6dd413370895a90b45f87}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!spin@{spin}}
+\index{spin@{spin}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{spin()}{spin()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a01df960000d6dd413370895a90b45f87} 
+spin (\begin{DoxyParamCaption}\item[{}]{value}{ = {\ttfamily 0}, }\item[{}]{low}{ = {\ttfamily -\/1e9}, }\item[{}]{high}{ = {\ttfamily 1e9}, }\item[{}]{decimals}{ = {\ttfamily 6}}\end{DoxyParamCaption})}
+
+
+
+Helper factory creating a QDouble\+Spin\+Box with keyboard tracking disabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Initial value. \\
+\hline
+{\em low} & Minimum allowed value. \\
+\hline
+{\em high} & Maximum allowed value. \\
+\hline
+{\em decimals} & Decimal precision digits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Configured QDouble\+Spin\+Box instance. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_afbeea1fb4d3907618c5ad2310a2fee78}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!stylesheet@{stylesheet}}
+\index{stylesheet@{stylesheet}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{stylesheet()}{stylesheet()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_afbeea1fb4d3907618c5ad2310a2fee78} 
+stylesheet (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Builds the complete Qt Style Sheet (QSS) for the instrument UI. 
+
+\begin{DoxyReturn}{Returns}
+QSS string. 
+\end{DoxyReturn}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a2f2da8b6c115d40622adbbefa714da58}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!suspicious\_gain@{suspicious\_gain}}
+\index{suspicious\_gain@{suspicious\_gain}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{suspicious\_gain()}{suspicious\_gain()}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a2f2da8b6c115d40622adbbefa714da58} 
+suspicious\+\_\+gain (\begin{DoxyParamCaption}\item[{}]{gain}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether a software channel gain lies outside the normal \+[0.\+2, 5.\+0] range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gain} & \doxylink{class_generic___d_s_o___single___file_071_08_1_1_channel}{Channel} gain value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if non-\/finite, non-\/positive, \texorpdfstring{$>$}{>} 5, or \texorpdfstring{$<$}{<} 0.\+2. 
+\end{DoxyReturn}
+
+
+\label{namespace_generic___d_s_o___single___file_01_071_08_doc-var-members}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a1363720540cc31da4235d05b442bed76}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!ACCENT@{ACCENT}}
+\index{ACCENT@{ACCENT}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{ACCENT}{ACCENT}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a1363720540cc31da4235d05b442bed76} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).ACCENT = \textquotesingle{}\+\#3263D9\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a07c690534cdaa69758aaca003b5b9c9d}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!ACCENT\_TEXT@{ACCENT\_TEXT}}
+\index{ACCENT\_TEXT@{ACCENT\_TEXT}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{ACCENT\_TEXT}{ACCENT\_TEXT}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a07c690534cdaa69758aaca003b5b9c9d} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).ACCENT\+\_\+\+TEXT = \textquotesingle{}\+\#FFFFFF\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ab7fe3ee054655e7d8c72c03a69869226}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!AXES@{AXES}}
+\index{AXES@{AXES}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{AXES}{AXES}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ab7fe3ee054655e7d8c72c03a69869226} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).AXES = \textquotesingle{}\+\#98A9\+BD\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ab1b63ae69e9b88968bf57544ac7f574a}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!BG@{BG}}
+\index{BG@{BG}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{BG}{BG}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ab1b63ae69e9b88968bf57544ac7f574a} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).BG = \textquotesingle{}\+\#F3\+F7\+FC\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_acd4ce2f7ea90db15d7cd9bd475d847e5}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!BORDER@{BORDER}}
+\index{BORDER@{BORDER}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{BORDER}{BORDER}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_acd4ce2f7ea90db15d7cd9bd475d847e5} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).BORDER = \textquotesingle{}\+\#DCE4\+EF\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a06a0a94087e15ec3f61725994d8117a5}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!CARD@{CARD}}
+\index{CARD@{CARD}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{CARD}{CARD}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a06a0a94087e15ec3f61725994d8117a5} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).CARD = \textquotesingle{}\+\#F7\+F9\+FD\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a0a9e778c80fb9b4ec6533da654dea994}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!COLORS@{COLORS}}
+\index{COLORS@{COLORS}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{COLORS}{COLORS}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a0a9e778c80fb9b4ec6533da654dea994} 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).COLORS = \+[\textquotesingle{}\+\#C87900\textquotesingle{}, \textquotesingle{}\+\#007E99\textquotesingle{}, \textquotesingle{}\+\#9556BD\textquotesingle{}, \textquotesingle{}\+\#19825B\textquotesingle{}]}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a484534b78a270038f408cdb74dd958b1}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!CURSOR@{CURSOR}}
+\index{CURSOR@{CURSOR}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{CURSOR}{CURSOR}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a484534b78a270038f408cdb74dd958b1} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).CURSOR = \textquotesingle{}\+\#334A70\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ab03c667a5b4c1b45267296863bb79106}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ab03c667a5b4c1b45267296863bb79106} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).ERROR = \textquotesingle{}\+\#B42337\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ae9a1f37977d2c221054b679a3fa28b94}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!GRID@{GRID}}
+\index{GRID@{GRID}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{GRID}{GRID}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ae9a1f37977d2c221054b679a3fa28b94} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).GRID = \textquotesingle{}\+\#CAD7\+E7\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a691240cbe7fe30e4c5ddac66b36ebc48}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!HOVER@{HOVER}}
+\index{HOVER@{HOVER}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{HOVER}{HOVER}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a691240cbe7fe30e4c5ddac66b36ebc48} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).HOVER = \textquotesingle{}\+\#2453C7\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_adea368c760f0ac2a1e6a6d78371b566c}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!MAX\_LINE@{MAX\_LINE}}
+\index{MAX\_LINE@{MAX\_LINE}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{MAX\_LINE}{MAX\_LINE}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_adea368c760f0ac2a1e6a6d78371b566c} 
+int \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).MAX\+\_\+\+LINE = 2\+\_\+000\+\_\+000}
+
+
+
+Maximum allowed incoming JSON message size in bytes (2 MB). 
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ae4ea024e5dea5d692b31bb91fbc9f55a}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!MAX\_POINTS@{MAX\_POINTS}}
+\index{MAX\_POINTS@{MAX\_POINTS}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{MAX\_POINTS}{MAX\_POINTS}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ae4ea024e5dea5d692b31bb91fbc9f55a} 
+int \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).MAX\+\_\+\+POINTS = 65536}
+
+
+
+Maximum number of sample points retained in the capture ring buffer. 
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a13d9881c67a044f57aa8e603b8c17f9f}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!MONO\_FONTS@{MONO\_FONTS}}
+\index{MONO\_FONTS@{MONO\_FONTS}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{MONO\_FONTS}{MONO\_FONTS}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a13d9881c67a044f57aa8e603b8c17f9f} 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).MONO\+\_\+\+FONTS = \+[\textquotesingle{}Cascadia Code\textquotesingle{}, \textquotesingle{}Consolas\textquotesingle{}, \textquotesingle{}Jet\+Brains Mono\textquotesingle{}, \textquotesingle{}Deja\+Vu Sans Mono\textquotesingle{}, \textquotesingle{}monospace\textquotesingle{}]}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_abcbc1eb48dadfc8b75bbc16fa26bb1f0}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!MUTED@{MUTED}}
+\index{MUTED@{MUTED}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{MUTED}{MUTED}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_abcbc1eb48dadfc8b75bbc16fa26bb1f0} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).MUTED = \textquotesingle{}\+\#63728B\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a1553fced84a9b4fa1b025b2ff97d6395}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!OK@{OK}}
+\index{OK@{OK}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{OK}{OK}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a1553fced84a9b4fa1b025b2ff97d6395} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).OK = \textquotesingle{}\+\#147954\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a8127aca51ef8ac912ff11ef338b2d145}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!PANEL@{PANEL}}
+\index{PANEL@{PANEL}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{PANEL}{PANEL}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a8127aca51ef8ac912ff11ef338b2d145} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).PANEL = \textquotesingle{}\+\#FFFFFF\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a45be301e6e8bcb6276ed57c02ea94292}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!PRESSED@{PRESSED}}
+\index{PRESSED@{PRESSED}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{PRESSED}{PRESSED}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a45be301e6e8bcb6276ed57c02ea94292} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).PRESSED = \textquotesingle{}\+\#1644AC\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a9ffd0cc55f96211185ce82374b52dc44}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!SCALES@{SCALES}}
+\index{SCALES@{SCALES}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{SCALES}{SCALES}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a9ffd0cc55f96211185ce82374b52dc44} 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).SCALES = \+[1e-\/6, 2e-\/6, 5e-\/6, 1e-\/5, 2e-\/5, 5e-\/5, .\+0001, .\+0002, .\+0005, .\+001, .\+002, .\+005, .\+01, .\+02, .\+05, .\+1, .\+2, .\+5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]}
+
+
+
+Standard 1-\/2-\/5 vertical scale steps in base units/\+division. 
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a3edde4c4090d0393b7774743724ccb4b}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!SCREEN@{SCREEN}}
+\index{SCREEN@{SCREEN}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{SCREEN}{SCREEN}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a3edde4c4090d0393b7774743724ccb4b} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).SCREEN = \textquotesingle{}\+\#FFFFFF\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_acc6bc2158af040feb8575d0eaeecb09a}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!SENSOR\_UNITS@{SENSOR\_UNITS}}
+\index{SENSOR\_UNITS@{SENSOR\_UNITS}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{SENSOR\_UNITS}{SENSOR\_UNITS}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_acc6bc2158af040feb8575d0eaeecb09a} 
+dict \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).SENSOR\+\_\+\+UNITS}
+
+{\bfseries Initial value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{\textcolor{stringliteral}{'Device\ units'}:\ \textcolor{keywordtype}{None},\ \textcolor{stringliteral}{'Voltage'}:\ \textcolor{stringliteral}{'V'},\ \textcolor{stringliteral}{'Temperature'}:\ \textcolor{stringliteral}{'°C'},\ \textcolor{stringliteral}{'Current'}:\ \textcolor{stringliteral}{'A'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Pressure'}:\ \textcolor{stringliteral}{'Pa'},\ \textcolor{stringliteral}{'Acceleration'}:\ \textcolor{stringliteral}{'m/s²'},\ \textcolor{stringliteral}{'Light'}:\ \textcolor{stringliteral}{'lx'},\ \textcolor{stringliteral}{'Humidity'}:\ \textcolor{stringliteral}{'\%RH'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Speed'}:\ \textcolor{stringliteral}{'RPM'},\ \textcolor{stringliteral}{'Position'}:\ \textcolor{stringliteral}{'mm'},\ \textcolor{stringliteral}{'Digital\ level'}:\ \textcolor{stringliteral}{'logic'},\ \textcolor{stringliteral}{'Custom'}:\ \textcolor{keywordtype}{None}\}}
+
+\end{DoxyCode}
+
+
+Mapping of physical sensor presets to default engineering unit symbols. 
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ac4fb4979e249e6c8cc9dd58c5ab67814}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!SOFT@{SOFT}}
+\index{SOFT@{SOFT}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{SOFT}{SOFT}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ac4fb4979e249e6c8cc9dd58c5ab67814} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).SOFT = \textquotesingle{}\+\#E8\+EEFF\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a2ea7a1af7e8f2d723d51915722984a97}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!SOFT\_TEXT@{SOFT\_TEXT}}
+\index{SOFT\_TEXT@{SOFT\_TEXT}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{SOFT\_TEXT}{SOFT\_TEXT}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a2ea7a1af7e8f2d723d51915722984a97} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).SOFT\+\_\+\+TEXT = \textquotesingle{}\+\#1943A3\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a9a5597e2962a059941b14fae0f5d01e3}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!TEXT@{TEXT}}
+\index{TEXT@{TEXT}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{TEXT}{TEXT}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a9a5597e2962a059941b14fae0f5d01e3} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).TEXT = \textquotesingle{}\+\#19283E\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_ac27506893a8a6c0cc8f08d66ce8947cd}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!TIME\_SCALES@{TIME\_SCALES}}
+\index{TIME\_SCALES@{TIME\_SCALES}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{TIME\_SCALES}{TIME\_SCALES}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_ac27506893a8a6c0cc8f08d66ce8947cd} 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).TIME\+\_\+\+SCALES = \+[1e-\/6, 2e-\/6, 5e-\/6, 1e-\/5, 2e-\/5, 5e-\/5, .\+0001, .\+0002, .\+0005, .\+001, .\+002, .\+005, .\+01, .\+02, .\+05, .\+1, .\+2, .\+5, 1, 2, 5, 10, 20, 50, 100]}
+
+
+
+Standard 1-\/2-\/5 horizontal timebase steps in seconds/\+division. 
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_aa584ea94db8a0ba44192ca4c723ac389}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!TRIGGER@{TRIGGER}}
+\index{TRIGGER@{TRIGGER}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{TRIGGER}{TRIGGER}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_aa584ea94db8a0ba44192ca4c723ac389} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).TRIGGER = \textquotesingle{}\+\#B65843\textquotesingle{}}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a945e621d78ef84d5087452d0719ce1f5}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!UI\_FONTS@{UI\_FONTS}}
+\index{UI\_FONTS@{UI\_FONTS}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{UI\_FONTS}{UI\_FONTS}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a945e621d78ef84d5087452d0719ce1f5} 
+list \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).UI\+\_\+\+FONTS = \+[\textquotesingle{}Segoe UI\textquotesingle{}, \textquotesingle{}Inter\textquotesingle{}, \textquotesingle{}Helvetica Neue\textquotesingle{}, \textquotesingle{}Deja\+Vu Sans\textquotesingle{}, \textquotesingle{}sans-\/serif\textquotesingle{}]}
+
+\Hypertarget{namespace_generic___d_s_o___single___file_01_071_08_a92f8b3944a9aea793e44432646ef4b4e}\index{Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}!WARNING@{WARNING}}
+\index{WARNING@{WARNING}!Generic\_DSO\_Single\_File (1)@{Generic\_DSO\_Single\_File (1)}}
+\doxysubsubsection{\texorpdfstring{WARNING}{WARNING}}
+{\footnotesize\ttfamily \label{namespace_generic___d_s_o___single___file_01_071_08_a92f8b3944a9aea793e44432646ef4b4e} 
+str \doxymbox{\hyperlink{namespace_generic___d_s_o___single___file}{Generic\+\_\+\+DSO\+\_\+\+Single\+\_\+\+File}} (1).WARNING = \textquotesingle{}\+\#A45\+D0B\textquotesingle{}}
+

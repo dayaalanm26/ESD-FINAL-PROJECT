@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['_5fcapture_5fac_5freference_0',['_capture_ac_reference',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a73fb01f485962afa3ce0b3e4f886292f',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fcursor_5fadjusting_1',['_cursor_adjusting',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a109cd75c63aca2b038feaa866c8370b9',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fcv_2',['_cv',['../class_generic___d_s_o___single___file_071_08_1_1_realtime_event_queue.html#a5fb62efe1f624608d66d5a4fed166df0',1,'Generic_DSO_Single_File(1)::RealtimeEventQueue']]],
+  ['_5fdevice_5fsamples_3',['_device_samples',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ad40eca66fdce353bad6942b427923ab7',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fdisplay_5ffrequency_4',['_display_frequency',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a56d68271962ecb4a8a5606f3aac1c1ce',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fevents_5',['_events',['../class_generic___d_s_o___single___file_071_08_1_1_realtime_event_queue.html#a469a44d703ad27aee3edbb674162d79f',1,'Generic_DSO_Single_File(1)::RealtimeEventQueue']]],
+  ['_5flast_5fdevice_5fsamples_6',['_last_device_samples',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a3fc993d1112cc3b39fb69ef1112d4f5c',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5flast_5fdraw_7',['_last_draw',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7e240f0f37c4cca69e5192c39fda4833',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5flast_5ffresh_5fcapture_8',['_last_fresh_capture',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#abf83ffd9bf4212193cce573f1674ef57',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5flast_5fmeasure_5fupdate_9',['_last_measure_update',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a23073491b44029b2506c15d52ae6aec0',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5flast_5fnotice_5fupdate_10',['_last_notice_update',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a998b877b8bbb0f4ab39726dd1b14f68e',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fmeasure_5fchannel_11',['_measure_channel',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#aef474b37531ecb1358a25b42d4a12d0f',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fprobe_5ffactors_12',['_probe_factors',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a0366f9c5c86f8f71406bd4fae803a8b6',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fprocessed_5fcapture_13',['_processed_capture',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ab96bc44e14cd05417bdb99cd7e0d2c6d',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fredraw_5ftimer_14',['_redraw_timer',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a42cc1c50df83f0582f9c398d31367117',1,'Generic_DSO_Single_File(1)::ScopeWindow']]],
+  ['_5fui_5ffps_15',['_ui_fps',['../class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a5be6db037b3d02f6cee5252697deee26',1,'Generic_DSO_Single_File(1)::ScopeWindow']]]
+];

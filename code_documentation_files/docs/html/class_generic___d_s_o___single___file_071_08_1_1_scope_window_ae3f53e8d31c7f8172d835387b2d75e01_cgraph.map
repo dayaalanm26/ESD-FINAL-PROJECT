@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.trigger_engine_level" name="Generic_DSO_Single_File(1).ScopeWindow.trigger_engine_level">
+<area shape="rect" id="Node000001" title="Converts the probe&#45;scaled UI trigger voltage into raw calibrated channel units for CaptureEngine." alt="" coords="5,47,197,105"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="245,5,432,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,57,232,53,227,55,198,62"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7bda3d8f84691c35ae906eceecd128f3" title="Returns the numeric probe attenuation multiplier (1.0, 10.0, or 100.0) for channel i." alt="" coords="245,88,432,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,90,232,98,226,99,197,95"/>
+</map>

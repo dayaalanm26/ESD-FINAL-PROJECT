@@ -1,0 +1,10 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.scale_combo_changed" name="Generic_DSO_Single_File(1).ScopeWindow.scale_combo_changed">
+<area shape="rect" id="Node000001" title="Synchronizes vertical scale slider and redraws when V/div dropdown changes." alt="" coords="5,72,192,131"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a76a3123f81aac4175b9b1c9943d2335a" title="Synchronizes vertical position slider when the position spinbox changes." alt="" coords="240,5,440,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,73,227,65,222,68,193,78"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a23d10d1ff32d2734fef3d75a9b67591b" title="Synchronizes the trigger slider thumb with the current trigger voltage level." alt="" coords="488,39,682,97"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="192,92,473,73,472,78,192,98"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a2b0a9b48ae617a9d6d51300c02ee58ff" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="248,139,432,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,124,235,138,230,139,192,130"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,46,475,52,470,53,441,51"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).Reader" name="Generic_DSO_Single_File(1).Reader">
+<area shape="rect" id="Node000001" title="Background daemon thread reading newline&#45;delimited JSON packets over Serial or TCP." alt="" coords="5,80,151,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="17,5,139,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,46,81,81,75,79,76,50"/>
+</map>

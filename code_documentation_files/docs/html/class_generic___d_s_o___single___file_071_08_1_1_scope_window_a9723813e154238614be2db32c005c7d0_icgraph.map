@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.time_changed" name="Generic_DSO_Single_File(1).ScopeWindow.time_changed">
+<area shape="rect" id="Node000001" title="Resets capture buffer and updates plot axes when time/division changes." alt="" coords="234,5,414,64"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#ae55cf33c057215afce12bde1e7e4998d" title="Synchronizes timebase slider and updates horizontal axes when s/div changes." alt="" coords="5,5,186,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,35,186,37,186,32,221,34"/>
+</map>

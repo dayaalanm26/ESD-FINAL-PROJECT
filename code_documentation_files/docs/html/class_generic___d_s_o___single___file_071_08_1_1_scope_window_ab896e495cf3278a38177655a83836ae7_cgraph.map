@@ -1,0 +1,49 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.accept_metadata" name="Generic_DSO_Single_File(1).ScopeWindow.accept_metadata">
+<area shape="rect" id="Node000001" title="Configures channel names, units, presets, and auto&#45;arming upon receiving a device Metadata packet." alt="" coords="5,250,200,309"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a9978b8559658963a69819a052d655125" title="Configures Roll mode (500 ms/div) and per&#45;channel vertical scales for the ESP32 Four Sensors firmware..." alt="" coords="255,291,442,350"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,293,242,301,237,304,201,298"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="774,238,969,297"/>
+<area shape="poly" id="edge28_Node000001_Node000004" title=" " alt="" coords="114,248,134,208,163,161,200,114,246,76,280,56,310,44,366,32,424,31,497,27,563,16,616,5,641,3,668,5,696,13,728,28,754,46,777,68,815,119,842,174,860,224,855,222,838,176,811,122,773,71,751,50,725,32,694,18,667,10,642,8,617,10,564,21,497,33,424,36,366,38,312,49,282,61,249,80,204,118,167,164,138,211,119,251"/>
+<area shape="rect" id="Node000013" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a3f757987a6b0219490c9d794c0764ab7" title="Clears old buffer data and starts continuous or single&#45;shot acquisition." alt="" coords="260,134,437,177"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="150,247,246,194,279,181,275,185,249,199,154,251"/>
+<area shape="rect" id="Node000015" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7340f3b4386a2aba580739140718d347" title="Updates the RUN/STOP button styling and top status badge." alt="" coords="525,42,698,101"/>
+<area shape="poly" id="edge27_Node000001_Node000015" title=" " alt="" coords="119,249,141,217,170,182,206,147,246,120,311,93,380,77,447,68,511,66,507,69,448,73,381,82,313,98,249,124,209,151,174,185,145,220,124,251"/>
+<area shape="rect" id="Node000016" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a56d1e114dc88a74cbf8a15e240855187" title="Updates channel toggle labels, scale dropdown unit strings, and Plot View options." alt="" coords="248,374,448,433"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="152,307,249,360,261,367,256,368,246,364,152,312"/>
+<area shape="rect" id="Node000017" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a30a9016408dabcceed74936ba5c05a0d" title="Clears the currently displayed waveform and hides trace markers." alt="" coords="257,209,440,267"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="199,261,244,254,239,258,202,265"/>
+<area shape="rect" id="Node000018" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a1c937c8de6fbd3e4d7c0ceaad49b321b" title="Enables or disables channel, trigger, and export controls based on link and capture readiness." alt="" coords="248,457,449,515"/>
+<area shape="poly" id="edge25_Node000001_Node000018" title=" " alt="" coords="124,307,177,375,211,411,249,443,256,448,251,448,246,447,208,414,173,378,123,312"/>
+<area shape="rect" id="Node000019" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8620a8d670fc31a7c5363ef51e4256fb" title="Persists current board and channel calibration settings to disk." alt="" coords="257,539,440,598"/>
+<area shape="poly" id="edge26_Node000001_Node000019" title=" " alt="" coords="114,306,135,355,164,413,202,473,224,500,249,525,253,531,248,529,246,529,220,504,197,476,159,415,130,357,113,312"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7dd06b82d483bbd87fef8c449be773af" title="Configures horizontal X range, X&#45;axis inversion (for Roll mode), ticks, and graticule window." alt="" coords="497,309,726,351"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="441,321,484,325,479,326,443,327"/>
+<area shape="rect" id="Node000007" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a095bd9efc046c566b3eb11b58837684f" title="Recomputes waveform metrics for the selected measurement channel and updates metric cards." alt="" coords="514,375,709,434"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="442,348,505,370,500,370,442,353"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="702,305,761,294,756,295,704,311"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="1030,313,1214,371"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="727,330,1017,339,1012,340,727,335"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="1022,230,1222,289"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="969,262,1008,263,1003,263,970,267"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="969,294,1018,310,1012,310,969,299"/>
+<area shape="poly" id="edge15_Node000007_Node000004" title=" " alt="" coords="700,372,725,361,774,333,817,307,822,304,776,338,728,366,702,377"/>
+<area shape="rect" id="Node000008" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a9374880a6281b4d55658866cc12edac7" title="Returns the processed, coupled, and probe&#45;scaled trace array for channel i." alt="" coords="1017,413,1227,471"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="709,428,775,439,891,447,1003,448,998,449,890,452,774,445,709,433"/>
+<area shape="rect" id="Node000012" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a0bf8dbf29d366743bcb48b3b39dc1bfe" title="Updates the reference comparison banner and scale/gain audit bar with input vs display metrics." alt="" coords="774,371,969,430"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="709,400,762,402,756,403,710,406"/>
+<area shape="rect" id="Node000009" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a840aab90520b76b49cee2ec6484ba1c2" title="Retrieves the DC baseline subtracted during AC coupling for channel ch." alt="" coords="1284,371,1453,430"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1227,422,1266,418,1271,417,1228,427"/>
+<area shape="rect" id="Node000011" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7bda3d8f84691c35ae906eceecd128f3" title="Returns the numeric probe attenuation multiplier (1.0, 10.0, or 100.0) for channel i." alt="" coords="1275,454,1462,513"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="1228,457,1262,465,1257,465,1227,462"/>
+<area shape="rect" id="Node000010" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="1510,371,1698,430"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1454,398,1497,400,1492,401,1454,403"/>
+<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="969,375,1012,368,1017,366,970,380"/>
+<area shape="poly" id="edge13_Node000012_Node000008" title=" " alt="" coords="969,414,1004,422,998,422,969,419"/>
+<area shape="poly" id="edge19_Node000013_Node000004" title=" " alt="" coords="436,140,502,135,576,135,653,143,727,161,756,173,784,189,832,228,827,227,781,194,754,178,725,166,652,148,575,141,502,141,438,145"/>
+<area shape="rect" id="Node000014" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a2b0a9b48ae617a9d6d51300c02ee58ff" title="Resets multi&#45;record averaging state when acquisition or vertical controls change." alt="" coords="520,175,704,234"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="437,169,507,184,502,186,438,175"/>
+<area shape="poly" id="edge18_Node000013_Node000015" title=" " alt="" coords="416,131,512,102,508,105,419,136"/>
+<area shape="poly" id="edge24_Node000017_Node000004" title=" " alt="" coords="440,240,761,260,757,263,441,246"/>
+<area shape="poly" id="edge23_Node000017_Node000007" title=" " alt="" coords="434,265,451,277,468,299,475,321,482,341,499,361,504,367,499,367,495,365,478,344,470,322,463,302,447,281,433,270"/>
+<area shape="poly" id="edge22_Node000017_Node000014" title=" " alt="" coords="440,224,506,217,501,219,441,229"/>
+</map>

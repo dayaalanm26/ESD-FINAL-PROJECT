@@ -1,0 +1,7 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.reset_after_scaling_change" name="Generic_DSO_Single_File(1).ScopeWindow.reset_after_scaling_change">
+<area shape="rect" id="Node000001" title="Clears stale captures, persists updated channel profiles, and restarts acquisition if previously runn..." alt="" coords="258,47,442,105"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a588f0e40b2b7190596035d6a4e5a6973" title="Opens an interactive two&#45;point voltage calibration dialog with safety bounds checking." alt="" coords="5,5,210,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,58,210,55,210,50,245,57"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a63cad47fda73bd1c7543e9b68eb4afd9" title="Prompts the user and restores CH1 software calibration to unity (gain=1.0, offset=0...." alt="" coords="15,88,200,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,95,201,104,200,99,245,94"/>
+</map>

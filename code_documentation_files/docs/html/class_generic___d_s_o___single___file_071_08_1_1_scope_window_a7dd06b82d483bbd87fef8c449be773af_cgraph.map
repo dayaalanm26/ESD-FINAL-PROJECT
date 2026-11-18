@@ -1,0 +1,10 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.update_axes" name="Generic_DSO_Single_File(1).ScopeWindow.update_axes">
+<area shape="rect" id="Node000001" title="Configures horizontal X range, X&#45;axis inversion (for Roll mode), ticks, and graticule window." alt="" coords="5,63,235,105"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="283,21,477,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,67,270,64,265,66,236,72"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="534,88,717,147"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="235,89,519,108,517,113,235,94"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="525,5,725,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="477,42,512,42,507,43,478,47"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="478,74,521,89,516,88,477,80"/>
+</map>

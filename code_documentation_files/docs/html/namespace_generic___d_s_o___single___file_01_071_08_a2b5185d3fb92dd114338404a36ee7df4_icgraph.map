@@ -1,0 +1,5 @@
+<map id="Generic_DSO_Single_File (1).estimate_plateaus" name="Generic_DSO_Single_File (1).estimate_plateaus">
+<area shape="rect" id="Node000001" title="Estimates stable low and high plateau levels of a square wave using interquartile medians." alt="" coords="200,5,378,48"/>
+<area shape="rect" id="Node000002" href="$namespace_generic___d_s_o___single___file_01_071_08.html#a65b2c786e2e6451bf46589726bb0773e" title="Computes new linear calibration coefficients (raw * gain + offset) from a known square wave." alt="" coords="5,5,152,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,27,152,29,152,24,187,26"/>
+</map>

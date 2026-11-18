@@ -1,0 +1,15 @@
+<map id="Generic_DSO_Single_File(1).ScopeWindow.accept_capture" name="Generic_DSO_Single_File(1).ScopeWindow.accept_capture">
+<area shape="rect" id="Node000001" title="Stores a new Capture record, runs acquisition processing, and updates axes if needed." alt="" coords="5,80,200,139"/>
+<area shape="rect" id="Node000002" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a8fb50da968cd4f701d0a3dc37decaa02" title="Computes the mean DC level over the latest 10&#45;division buffer span for AC coupling." alt="" coords="269,5,456,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,79,256,65,251,67,201,84"/>
+<area shape="rect" id="Node000003" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a7dd06b82d483bbd87fef8c449be773af" title="Configures horizontal X range, X&#45;axis inversion (for Roll mode), ticks, and graticule window." alt="" coords="248,88,477,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,107,235,109,229,110,201,112"/>
+<area shape="rect" id="Node000006" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#adfad866b0a193038e2afa4e3c9a87d6e" title="Determines whether the horizontal axis should render in right&#45;to&#45;left Roll coordinates." alt="" coords="776,96,959,155"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="200,132,248,140,386,150,525,150,654,143,758,137,763,137,654,149,525,155,386,155,247,145,200,137"/>
+<area shape="rect" id="Node000004" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#af96e4dbdc244ff4a0e0cffe020997461" title="Refreshes the top and bottom scope telemetry bars with trigger, timebase, and scale readouts." alt="" coords="525,21,719,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="459,85,507,76,512,75,460,90"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="477,110,763,122,758,122,477,116"/>
+<area shape="rect" id="Node000005" href="$class_generic___d_s_o___single___file_071_08_1_1_scope_window.html#a433965cee500ebcf78f798d6968b0e17" title="Checks whether channel index should currently be rendered on the plot." alt="" coords="767,13,968,72"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="720,45,754,46,749,47,720,50"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="720,78,764,93,759,93,719,83"/>
+</map>
